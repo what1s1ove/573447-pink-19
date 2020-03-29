@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Pink: Взгляните на жизнь иначе!</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__navigation-wrapper">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип Pink">
+      </a>
+      <nav class="page-header__navigation">
+        <ul class="page-header__navigation-list">
+          <li class="page-header__navigation-item">
+            <a>Главная</a>
+          </li>
+          <li class="page-header__navigation-item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="page-header__navigation-item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="page-header__navigation-item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="page-header__toggle-button">
+        <span class="visually-hidden">Переключить вид меню</span>
+      </button>
+    </div>
+    <b class="page-header__page-intro">Конкурс на самое безбашенное путешествие с Пинк</b>
+  </header>
+  <main class="competition">
+    <h1 class="visually-hidden">Конкурс от приложения Pink</h1>
+    <p class="competition__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+    <form class="competition__form" name="competition__form" method="post" action="https://echo.htmlacademy.ru">
+      <div class="competition__fullname-wrapper form-lable form-lable--text">
+        <label class="competition__fullname-label">
+          <span>Фамилия</span>
+          <input type="text" name="competition-surname" placeholder="Укажите фамилию *">
+        </label>
+        <label class="competition__fullname-label form-lable form-lable--text">
+          <span>Имя</span>
+          <input type="text" name="competition-name" placeholder="Введите ваше имя *">
+        </label>
+        <label class="competition__fullname-label form-lable form-lable--text">
+          <span>Отчество</span>
+          <input type="text" name="competition-patronymic" placeholder="Ну и отчество тоже">
+        </label>
+      </div>
+      <div class="competition__achievements">
+        <p class="competition__achievements-intro">Ваши безбашенные достижения в путешествии</p>
+        <label class="competition__achievements-label form-lable form-lable--toggle">
+          <input type="checkbox" name="competition-achieve--shark" checked>
+          Сделал селфи с акулой
+        </label>
+        <label class="competition__achievements-label form-lable form-lable--toggle">
+          <input type="checkbox" name="competition-achieve--sunburn" checked>
+          Обгорел на пляже
+        </label>
+        <label class="competition__achievements-label form-lable form-lable--toggle">
+          <input type="checkbox" name="competition-achieve--chuck">
+          Видел Чака Норриса
+        </label>
+        <label class="competition__achievements-label form-lable form-lable--toggle">
+          <input type="checkbox" name="competition-achieve--souvenir">
+          Накупил сувениров
+        </label>
+        <label class="competition__achievements-label form-lable form-lable--toggle">
+          <input type="checkbox" name="competition-achieve--tower">
+          Удержал башню
+        </label>
+        <label class="competition__achievements-label form-lable form-lable--toggle">
+          <input type="checkbox" name="competition-achieve--hotel">
+          Разгромил отель
+        </label>
+      </div>
+      <div class="competition__contacts">
+        <label class="competition__contacts-label form-lable form-lable form-lable--text">
+          <span>Номер телефона</span>
+          <input type="text" name="competition-number" placeholder="Номер, пожалуйста">
+        </label>
+        <label class="competition__contacts-label form-lable form-lable form-lable--text">
+          <span>Адрес почты</span>
+          <input type="text" name="competition-email" placeholder="Введите почту *">
+        </label>
+      </div>
+      <div class="competition__app">
+        <p class="competition__app-intro">С каким приложением путешествовали?</p>
+        <label class="competition__app-label form-lable form-lable--toggle">
+          <input type="radio" name="competition-app" value="competition-app--ios">
+          <span>Pink для iOS</span>
+        </label>
+        <label class="competition__app-label form-lable form-lable--toggle">
+          <input type="radio" name="competition-app" value="competition-app--android">
+          <span>Pink на Android</span>
+        </label>
+        <label class="competition__app-label form-lable form-lable--toggle">
+          <input type="radio" name="competition-app" value="competition-app--wp">
+          <span>Windows Phone</span>
+        </label>
+      </div>
+      <div class="competition__comment">
+        <p class="competition__comment-intro">Опишите свои эмоции</p>
+        <label class="competition__comment-label">
+          <span class="visually-hidden">Оставьте коментарий</span>
+          <textarea name="competition-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </label>
+      </div>
+      <button class="competition__form-button" type="submit">Отправить форму</button>
+      <p class="competition__form-required">
+        <abbr title="Этим символом('звёздочка') выделены обязательные поля">*</abbr> — обязательные поля
+      </p>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="index.html">
+      <img src="https://via.placeholder.com/146x40" width="146" height="40" alt="Логотип Pink">
+    </a>
+    <ul class="page-footer__social-list">
+      <li class="age-footer__social-item">
+        <a href="#">
+          <span class="visually-hidden">На нашу страницу в Твиттере</span>
+        </a>
+      </li>
+      <li class="age-footer__social-item">
+        <a href="#">
+          <span class="visually-hidden">На нашу страницу в Фэйсбуке</span>
+        </a>
+      </li>
+      <li class="age-footer__social-item">
+        <a href="#">
+          <span class="visually-hidden">На нашу страницу в Твиттере</span>
+        </a>
+      </li>
+    </ul>
+    <a href="page-footer__copyright">
+      <small>Разработано</small>
+    </a>
+  </footer>
+</body>
+</html>
