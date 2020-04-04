@@ -1,0 +1,115 @@
+.new-post {
+  padding: 45px 0 0;
+}
+
+.new-post__intro {
+  margin: 0 0 40px;
+
+  text-align: center;
+}
+
+.new-post__form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 0  40px;
+
+  background-color: #f2f2f2;
+}
+
+.new-post__load-input {
+  align-self: center;
+
+  margin-bottom: 40px;
+}
+
+.new-post__contol-list {
+  @include list-unstyled;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  margin: 0 0 40px;
+}
+
+.new-post__contol-item {
+  margin: 0 35px 0 0;
+  padding: 0 0 55px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  svg {
+    opacity: 0.3;
+  }
+
+  &--active svg {
+    fill: #d22856;
+
+    opacity: 1;
+  }
+
+  button {
+    padding: 0;
+    line-height: 0;
+
+    background-color: transparent;
+
+    border: 0;
+
+    cursor: pointer;
+  }
+}
+
+.new-post__filter-wrapper {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 0 0 35px;
+
+  border-bottom: 1px solid #dddfe0;
+}
+
+.new-post__filter-track {
+  position: relative;
+
+  width: 240px;
+  height: 2px;
+
+  background-color: #283645;
+}
+
+.new-post__filter-trumb {
+  position: absolute;
+  top: 50%;
+  right: 33px;
+  transform: translateY(-50%);
+
+  width: 15px;
+  height: 15px;
+
+  background-color: #ffffff;
+
+  border: 2px solid #d22856;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.new-post__submit-button {
+  align-self: center;
+
+  margin: 0 0 12px;
+}
+
+.new-post__reset-button {
+  align-self: center;
+}
