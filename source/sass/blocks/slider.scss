@@ -1,0 +1,30 @@
+.slider__toggles {
+  display: flex;
+
+  margin: 0;
+
+  line-height: 0;
+
+  button:not(:last-child) {
+    margin-right: 13px;
+  }
+}
+
+.slider__toggle {
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+
+  background-color: #bec2c7;
+
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &--active {
+    background-color: #ffffff;
+    border-color: #283645;
+  }
+}

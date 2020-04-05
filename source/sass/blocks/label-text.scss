@@ -1,0 +1,26 @@
+.label-text {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    margin: 0 0 15px;
+
+    text-indent: 20px;
+    text-transform: uppercase;
+    line-height: normal;
+    color: #d22856;
+  }
+
+  input {
+    padding: 18px 20px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    border: 2px solid #e5e5e5;
+  }
+
+  input::placeholder {
+    color: #283645;
+  }
+}

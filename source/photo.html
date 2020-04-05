@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink: Взгляните на жизнь иначе!</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
-    <div class="header__navigation-wrapper">
+    <div class="header__navigation-wrapper header__navigation-wrapper--active">
       <a class="header__logo" href="index.html">
-        <img src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип Pink">
+        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
       </a>
       <nav class="header__navigation">
         <ul class="header__navigation-list">
@@ -40,7 +41,7 @@
       <ul class="gallery__list">
         <li class="gallery__item gallery__item--topday">
           <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/320x137" width="320" height="137" alt="Фото из приложения Pink">
+            <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото из приложения Pink">
             <span class="gallery__img-topday">Панорама дня</span>
           </p>
           <blockquote class="gallery__comment">
@@ -59,7 +60,7 @@
         </li>
         <li class="gallery__item gallery__item--topday">
           <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
+            <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
           </p>
           <blockquote class="gallery__comment">
             <p class="gallery__author-info">
@@ -77,7 +78,7 @@
         </li>
         <li class="gallery__item gallery__item--topday">
           <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
+            <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
           </p>
           <blockquote class="gallery__comment">
             <p class="gallery__author-info">
@@ -95,7 +96,7 @@
         </li>
         <li class="gallery__item gallery__item--topday">
           <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
+            <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
           </p>
           <blockquote class="gallery__comment">
             <p class="gallery__author-info">
@@ -113,7 +114,7 @@
         </li>
         <li class="gallery__item gallery__item--topday">
           <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
+            <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
           </p>
           <blockquote class="gallery__comment">
             <p class="gallery__author-info">
@@ -131,7 +132,7 @@
         </li>
         <li class="gallery__item gallery__item--topday">
           <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
+            <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
           </p>
           <blockquote class="gallery__comment">
             <p class="gallery__author-info">
@@ -149,7 +150,7 @@
         </li>
         <li class="gallery__item gallery__item--topday">
           <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
+            <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
           </p>
           <blockquote class="gallery__comment">
             <p class="gallery__author-info">
@@ -172,59 +173,87 @@
       <p class="new-post__intro">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       <form class="new-post__form" name="new-post__form" method="post" action="https://echo.htmlacademy.ru">
         <label class="new-post__load-input">
-          <img src="https://via.placeholder.com/280x374" width="280" height="374" alt="Пример загрузки фотографии для приложения Pink">
-          <input type="file" name="new-post-picture">
+          <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Пример загрузки фотографии для приложения Pink">
+          <input class="visually-hidden" type="file" name="new-post-picture">
           <span class="visually-hidden">Загрузка фотографии</span>
         </label>
         <ul class="new-post__contol-list">
-          <li class="new-post__contol-item">
-            <button class="new-post__contol-button">
+          <li class="new-post__contol-item new-post__contol-item--active">
+            <button class="new-post__contol-button" type="button">
+              <svg fill="#283645" xmlns="http://www.w3.org/2000/svg"  width="48px" height="48px" viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+              </svg>
               <span class="visually-hidden">Обрезка фотографии</span>
             </button>
+            <div class="new-post__filter-wrapper">
+              <div class="new-post__filter-track">
+                <span class="new-post__filter-trumb">
+                  <span class="visually-hidden">Насыщеность фильтра</span>
+                </span>
+              </div>
+            </div>
           </li>
           <li class="new-post__contol-item">
-            <button class="new-post__contol-button">
+            <button class="new-post__contol-button" type="button">
+              <svg fill="#283645" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                <rect y="40" width="48" height="3"/>
+              </svg>
               <span class="visually-hidden">Заливка фотографии</span>
             </button>
           </li>
           <li class="new-post__contol-item">
-            <button class="new-post__contol-button">
+            <button class="new-post__contol-button" type="button">
+              <svg fill="#283645" xmlns="http://www.w3.org/2000/svg" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" aria-hidden="true">
+                <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+              </svg>
               <span class="visually-hidden">Инверсия фотографии</span>
             </button>
           </li>
         </ul>
-        <label class="new-post__filter-label">
-          <input type="range" name="new-post-filter">
-          <span class="visually-hidden">Насыщеность фильтров</span>
-        </label>
-        <button class="new-post__submit-buttn button" type="submit">Запостить</button>
-        <button class="new-post__reset-button button" type="reset">Отмена</button>
+        <button class="new-post__submit-button button button--pink" type="submit">Запостить</button>
+        <button class="new-post__reset-button button button--gray" type="reset">Отмена</button>
       </form>
     </section>
   </main>
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <img src="https://via.placeholder.com/146x40" width="146" height="40" alt="Логотип Pink">
+      <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Pink">
     </a>
     <ul class="footer__social-list">
       <li class="footer__social-item">
         <a href="#">
+          <svg fill="#d22856" xmlns="http://www.w3.org/2000/svg" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+          </svg>
           <span class="visually-hidden">На нашу страницу в Твиттере</span>
         </a>
       </li>
       <li class="footer__social-item">
         <a href="#">
+          <svg fill="#d22856" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" aria-hidden="true">
+            <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+          </svg>
           <span class="visually-hidden">На нашу страницу в Фэйсбуке</span>
         </a>
       </li>
       <li class="footer__social-item">
         <a href="#">
-          <span class="visually-hidden">На нашу страницу в Твиттере</span>
+          <svg fill="#d22856" xmlns="http://www.w3.org/2000/svg" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96">
+            <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+          </svg>
+          <span class="visually-hidden">На нашу страницу в Ютубе</span>
         </a>
       </li>
     </ul>
     <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <small>Разработано</small>
+      <small>
+        Разработано
+      </small>
+      <svg fill="#d22856" xmlns="http://www.w3.org/2000/svg" width="42" height="59" viewBox="0 0 60 60" aria-hidden="true">
+        <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+      </svg>
     </a>
   </footer>
 </body>

@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink: Взгляните на жизнь иначе!</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
-    <div class="header__navigation-wrapper">
+    <div class="header__navigation-wrapper header__navigation-wrapper--active">
       <a class="header__logo">
-        <img src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип Pink">
+        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
       </a>
       <nav class="header__navigation">
         <ul class="header__navigation-list">
@@ -31,7 +32,7 @@
       </button>
     </div>
     <b class="header__page-intro">Взгляните на жизнь иначе!</b>
-    <img class="header__main-img" src="https://via.placeholder.com/320x314" width="320" height="314" alt="Превью приложения">
+    <img class="header__main-img" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Превью приложения">
   </header>
   <main>
     <h1 class="visually-hidden">Сайт приложения Pink</h1>
@@ -55,12 +56,13 @@
           </a>
         </li>
       </ul>
+      <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущства приложения Pink</h2>
       <p class="advantages__intro-wrapper">
         <b>Устали от серости мегаполиса?</b>
-        <b>Нам есть, что вам<br> предложить!</b>
+        <b>Нам есть, что вам предложить!</b>
       </p>
       <ul class="advantages__list">
         <li class="advantages__item">
@@ -73,10 +75,10 @@
           <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           <img class="advantages__item-img" src="https://via.placeholder.com/157x320" width="157" height="320" alt="Скриншон приложения Pink">
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--active">
           <h3 class="advantages__item-title">Заводит новых друзей</h3>
           <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          <img class="advantages__item-img" src="https://via.placeholder.com/157x320" width="157" height="320" alt="Скриншон приложения Pink">
+          <img class="advantages__item-img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Скриншон приложения Pink">
         </li>
       </ul>
     </section>
@@ -85,21 +87,21 @@
       <div class="reviews__wrapper slider">
         <ul class="reviews__list">
           <li class="reviews__item slider__item">
-            <blockquote>
+            <blockquote class="reviews__item-wrapper">
               <cite class="reviews__author-name">Николай Петров</cite>
               <q class="reviews__author-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
             </blockquote>
           </li>
         </ul>
         <p class="slider__toggles">
-          <button class="slider__toggle" type="button">
+          <button class="slider__toggle slider__toggle--active" type="button">
             <span class="visually-hidden">Первый слайд</span>
           </button>
           <button class="slider__toggle" type="button">
             <span class="visually-hidden">Второй слайд</span>
           </button>
           <button class="slider__toggle" type="button">
-            <span class="visually-hidden">Третий слайд</span> 
+            <span class="visually-hidden">Третий слайд</span>
           </button>
         </p>
       </div>
@@ -110,24 +112,60 @@
         <table class="price__table">
           <thead>
             <tr>
+              <th class="price__table-heading price__table-heading--empty slider__item"></th>
+              <th class="price__table-heading slider__item">
+                <span class="price__table-title">База</span>
+                <span class="price__table-price">1,99 USD</span>
+              </th>
               <th class="price__table-heading price__table-heading--hit slider__item">
                 <span class="price__table-title">Стандарт</span>
                 <span class="price__table-price">3,99 USD</span>
+              </th>
+              <th class="price__table-heading slider__item">
+                <span class="price__table-title">Анлим</span>
+                <span class="price__table-price">9,99 USD</span>
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
+              <td class="price__table-value price__table-value--include price__table-value--empty">
+                Розовый фильтр
+              </td>
+              <td class="price__table-value price__table-value--include">
+                Розовый фильтр
+              </td>
+              <td class="price__table-value price__table-value--include">
+                Розовый фильтр
+              </td>
               <td class="price__table-value price__table-value--include">
                 Розовый фильтр
               </td>
             </tr>
             <tr>
+              <td class="price__table-value price__table-value--include price__table-value--empty">
+                Смайлики
+              </td>
+              <td class="price__table-value price__table-value--include">
+                Смайлики
+              </td>
+              <td class="price__table-value price__table-value--include">
+                Смайлики
+              </td>
               <td class="price__table-value price__table-value--include">
                 Смайлики
               </td>
             </tr>
             <tr>
+              <td class="price__table-value price__table-value--not-include price__table-value--empty">
+                Комментарии
+              </td>
+              <td class="price__table-value price__table-value--not-include">
+                Комментарии
+              </td>
+              <td class="price__table-value price__table-value--not-include">
+                Комментарии
+              </td>
               <td class="price__table-value price__table-value--not-include">
                 Комментарии
               </td>
@@ -138,11 +176,11 @@
           <button class="slider__toggle" type="button">
             <span class="visually-hidden">Первый слайд</span>
           </button>
-          <button class="slider__toggle" type="button">
+          <button class="slider__toggle slider__toggle--active" type="button">
             <span class="visually-hidden">Второй слайд</span>
           </button>
           <button class="slider__toggle" type="button">
-            <span class="visually-hidden">Третий слайд</span> 
+            <span class="visually-hidden">Третий слайд</span>
           </button>
         </p>
       </div>
@@ -150,7 +188,7 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
       <p class="contacts__intro">Остались вопросы?<br>Свяжитесь с нами!</p>
-      <address>
+      <address class="contacts__wrapper">
         <ul class="contacts__list">
           <li class="contacts__item">
             <b class="contacts__item-title">Звоните:</b>
@@ -166,7 +204,10 @@
           </li>
         </ul>
         <p class="contacts__map-wrapper">
-          <img src="https://via.placeholder.com/320x320" alt="ул. Большая Конюшенная, 19/8">
+          <svg class="contacts__map-triangle" xmlns="http://www.w3.org/2000/svg" width="595.28px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
+            <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "></polygon>
+          </svg>
+          <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8">
         </p>
       </address>
     </section>

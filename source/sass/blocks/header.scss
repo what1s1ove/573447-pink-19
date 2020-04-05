@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  background: no-repeat 0 0;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+}
+
+.header__logo {
+  display: flex;
+
+  padding: 22px 20px;
+
+  line-height: 0;
+}
+
+.header__navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 0 28px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &--active {
+    background-color: #283645;
+  }
+}
+
+.header__navigation {
+  display: none;
+}
+
+.header__navigation-wrapper--active .header__navigation {
+  display: block;
+}
+
+.header__navigation-list {
+  @include list-unstyled;
+
+  border-bottom: 1px solid #000000;
+}
+
+.header__navigation-item {
+  padding: 21px 0;
+
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.header__toggle-button {
+  position: absolute;
+  right: 20px;
+  top: 22px;
+
+  width: 50px;
+  height: 24px;
+  padding: 0;
+
+  background: transparent no-repeat 0 0;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-size: contain;
+
+  border: 0;
+
+  cursor: pointer;
+}
+
+.header__navigation-wrapper--active .header__toggle-button {
+  width: 24px;
+  height: 23px;
+
+  background-image: url("../../img/icon-menu-cross.svg");
+}
+
+.header__page-intro {
+  margin: 0 0 33px;
+
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
