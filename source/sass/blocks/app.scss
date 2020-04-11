@@ -1,15 +1,27 @@
 .app {
+  background-color: #15212d;
+}
+
+.app__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  max-width: 320px;
+  margin: 0 auto;
   padding: 28px 0 35px;
+}
 
-  background-color: #15212d;
+.app__img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin: 0;
 }
 
 .app__download-button {
-  margin-bottom: 32px;
+  margin: 0 0 32px;
 }
 
 .app__application-list {
@@ -65,4 +77,30 @@
 
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) { 
+  .app {
+    background-color: transparent;
+  }
+  
+  .app__wrapper {
+    max-width: 340px;
+    padding: 0 20px;
+    margin: unset;
+  }
+
+  .app__application-list {
+    margin: 0 0 40px;
+  }
+
+  .app__download-button {
+    max-width: 300px;
+    margin: 0 0 45px;
+  }
+
+  .app__description {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
