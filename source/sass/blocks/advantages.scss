@@ -72,6 +72,10 @@
   text-align: center;
 }
 
+.advantages__article {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .advantages {
     padding: 59px 0 0;
@@ -108,9 +112,8 @@
 
     img {
       position: absolute;
-      left: calc(50% - 175px);
+      left: 20px;
       bottom: 0;
-      transform: translateX(-50%);
     }
   }
 
@@ -122,5 +125,38 @@
     text-align: left;
     font-size: 14px;
     line-height: 24px;
+  }
+
+  .advantages__article {
+    display: block;
+
+    padding: 100px 40px 30px;
+
+    background: url("../../img/clock-tablet@1x.png") no-repeat 20px 59px;
+  }
+
+  .advantages__article-wrapper {
+    width: 50%;
+    margin: 0 0 0 auto;
+  }
+
+  .advantages__article-title {
+    margin: 0 0 10px;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #000000;
+  }
+
+  .advantages__article-text {
+    margin: 0 0 10px;
+
+    line-height: 24px;
+  }
+
+  .advantages__article-link {
+    line-height: 24px;
+    color: #d22856;
+    text-decoration: underline;
   }
 }
