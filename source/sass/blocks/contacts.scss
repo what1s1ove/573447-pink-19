@@ -34,6 +34,7 @@
   flex-direction: column;
   align-items: center;
 
+  text-align: center;
   font-style: normal;
 
   &:last-child {
@@ -68,4 +69,30 @@
   top: 0;
 
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__intro {
+    margin: 0 0 50px;
+
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    width: 50%;
+
+    margin: 0 0 45px;
+  }
+
+  .contacts__item-title {
+    margin: 0 0 5px;
+  }
 }
