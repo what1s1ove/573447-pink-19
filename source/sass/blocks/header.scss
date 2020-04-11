@@ -1,15 +1,30 @@
 .header {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 
-  background: no-repeat 0 0;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   background-size: cover;
+
+  &--main {
+    background-position: top;
+    background-size: 700px auto;
+  }
+}
+
+.header__wrapper {
+  padding: 0 0 85px;
+}
+
+.header--main .header__wrapper {
+  padding: 0 0 320px;
+
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
 }
 
 .header__logo {
-  display: flex;
-
   padding: 22px 20px;
 
   line-height: 0;
@@ -60,8 +75,8 @@
 
 .header__toggle-button {
   position: absolute;
-  right: 20px;
   top: 22px;
+  right: 20px;
 
   width: 50px;
   height: 24px;
@@ -84,10 +99,61 @@
 }
 
 .header__page-intro {
-  margin: 0 0 33px;
+  display: block;
+
+  padding: 0 50px;
 
   text-align: center;
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
+}
+
+.header__main-img {
+  line-height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding: 0 0 112px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 729px auto;
+
+    &--main {
+      background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+      background-position: right 10px bottom 0, bottom;
+      background-size: 700px auto, 1200px auto;
+    }
+  }
+
+  .header--main .header__wrapper {
+    padding: 0 0 35px;
+
+    background-image: none;
+  }
+
+  .header__navigation-wrapper {
+    margin: 0 0 100px;
+  }
+
+  .header__logo  {
+    padding: 27px 20px 43px;
+  }
+
+  .header__toggle-button {
+    top: 44px;
+    right: 20px;
+  }
+
+  .header--main  .header__page-intro {
+    max-width: 185px;
+    padding: 0 75px;
+
+    padding: 0;
+    margin-left: 75px;
+
+    font-size: 40px;
+    line-height: 42px;
+  }
 }
