@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink: Взгляните на жизнь иначе!</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -42,128 +43,138 @@
     <h1 class="visually-hidden">Конкурс от приложения Pink</h1>
     <p class="competition__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
     <form class="competition__form" name="competition__form" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="competition__fullname-wrapper">
-        <legend class="visually-hidden">Контактная информация</legend>
-        <label class="competition__fullname-label label-text">
-          <span>Фамилия</span>
-          <input type="text" name="competition-surname" placeholder="Укажите фамилию *">
-        </label>
-        <label class="competition__fullname-label label-text">
-          <span>Имя</span>
-          <input type="text" name="competition-name" placeholder="Введите ваше имя *">
-        </label>
-        <label class="competition__fullname-label label-text">
-          <span>Отчество</span>
-          <input type="text" name="competition-patronymic" placeholder="Ну и отчество тоже">
-        </label>
-      </fieldset>
-      <fieldset class="competition__achievements">
-        <legend class="visually-hidden">Ваши достижения</legend>
-        <p class="competition__achievements-intro">Ваши безбашенные достижения в путешествии</p>
-        <ul class="competition__achievements-list">
-          <li class="competition__achievements-item">
-            <p class="competition__achievements-input-wrapper input-toggle">
-              <input class="input-toggle__input visually-hidden" id="competition-achieve--shark" type="checkbox" name="competition-achieve--shark" checked>
-              <label class="input-toggle__label" for="competition-achieve--shark">
-                Сделал селфи с акулой
-              </label>
-            </p>
-          </li>
-          <li class="competition__achievements-item">
-            <p class="competition__achievements-input-wrapper input-toggle">
-              <input class="input-toggle__input visually-hidden" id="competition-achieve--sunburn" type="checkbox" name="competition-achieve--sunburn" checked>
-              <label class="input-toggle__label" for="competition-achieve--sunburn">
-                Обгорел на пляже
-              </label>
-            </p>
-          </li>
-          <li class="competition__achievements-item">
-            <p class="competition__achievements-input-wrapper input-toggle">
-              <input class="input-toggle__input visually-hidden" id="competition-achieve--chuck" type="checkbox" name="competition-achieve--chuck">
-              <label class="input-toggle__label" for="competition-achieve--chuck">
-                Видел Чака Норриса
-              </label>
-            </p>
-          </li>
-          <li class="competition__achievements-item">
-            <p class="competition__achievements-input-wrapper input-toggle">
-              <input class="input-toggle__input visually-hidden" id="competition-achieve--souvenir" type="checkbox" name="competition-achieve--souvenir">
-              <label class="input-toggle__label" for="competition-achieve--souvenir">
-                Накупил сувениров
-              </label>
-            </p>
-          </li>
-          <li class="competition__achievements-item">
-            <p class="competition__achievements-input-wrapper input-toggle">
-              <input class="input-toggle__input visually-hidden" id="competition-achieve--tower" type="checkbox" name="competition-achieve--tower" checked>
-              <label class="input-toggle__label" for="competition-achieve--tower">
-                Удержал башню
-              </label>
-            </p>
-          </li>
-          <li class="competition__achievements-item">
-            <p class="competition__achievements-input-wrapper input-toggle">
-              <input class="input-toggle__input visually-hidden" id="competition-achieve--hotel" type="checkbox" name="competition-achieve--hotel">
-              <label class="input-toggle__label" for="competition-achieve--hotel">
-                Разгромил отель
-              </label>
-            </p>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="competition__contacts">
-        <legend class="visually-hidden">Контактная информация</legend>
-        <label class="competition__contacts-label label-text">
-          <span>Номер телефона</span>
-          <input type="text" name="competition-number" placeholder="Номер, пожалуйста">
-        </label>
-        <label class="competition__contacts-label label-text">
-          <span>Адрес почты</span>
-          <input type="text" name="competition-email" placeholder="Введите почту *">
-        </label>
-      </fieldset>
-      <fieldset class="competition__app">
-        <legend class="visually-hidden">Ваше мобильное приложение</legend>
-        <p class="competition__app-intro">С каким приложением путешествовали?</p>
-        <ul class="competition__app-list">
-          <li class="competition__app-item">
-            <p class="competition__app-input-wrapper input-toggle">
-              <input class="input-toggle__input visually-hidden" id="competition-app--ios" type="radio" name="competition-app" value="competition-app--ios" checked>
-              <label class="input-toggle__label" for="competition-app--ios">
-                Pink для iOS
-              </label>
-            </p>
-          </li>
-          <li class="competition__app-item">
-            <p class="competition__app-input-wrapper input-toggle">
-              <input class="input-toggle__input visually-hidden" id="competition-app--android" type="radio" name="competition-app" value="competition-app--android">
-              <label class="input-toggle__label" for="competition-app--android">
-                Pink на Android
-              </label>
-            </p>
-          </li>
-          <li class="competition__app-item">
-            <p class="competition__app-input-wrapper input-toggle">
-              <input class="input-toggle__input visually-hidden" id="competition-app--wp" type="radio" name="competition-app" value="competition-app--wp">
-              <label class="input-toggle__label" for="competition-app--wp">
-                Windows Phone
-              </label>
-            </p>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="competition__comment">
-        <legend class="visually-hidden">Оставить коментарий</legend>
-        <p class="competition__comment-intro">Опишите свои эмоции</p>
-        <label class="competition__comment-label">
-          <span class="visually-hidden">Коментарий</span>
-          <textarea name="competition-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </label>
-      </fieldset>
-      <button class="competition__form-button" type="submit">Отправить форму</button>
-      <p class="competition__form-required">
-        <abbr title="Этим символом('звёздочка'), выделены обязательные поля">*</abbr> — обязательные поля
-      </p>
+      <div class="competition__form-wrapper">
+        <fieldset class="competition__fullname-wrapper">
+          <legend class="visually-hidden">Контактная информация</legend>
+          <label class="competition__fullname-label label-text">
+            <span>Фамилия</span>
+            <input type="text" name="competition-surname" placeholder="Укажите фамилию *">
+          </label>
+          <label class="competition__fullname-label label-text">
+            <span>Имя</span>
+            <input type="text" name="competition-name" placeholder="Введите ваше имя *">
+          </label>
+          <label class="competition__fullname-label label-text">
+            <span>Отчество</span>
+            <input type="text" name="competition-patronymic" placeholder="Ну и отчество тоже">
+          </label>
+        </fieldset>
+        <div class="competition__achievements-wrapper">
+          <fieldset class="competition__achievements">
+            <legend class="competition__achievements-intro">Ваши безбашенные достижения в путешествии</legend>
+            <p class="">Ваши безбашенные достижения в путешествии</p>
+            <ul class="competition__achievements-list">
+              <li class="competition__achievements-item">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--shark" type="checkbox" name="competition-achieve--shark" checked>
+                  <label class="input-toggle__label" for="competition-achieve--shark">
+                    Сделал селфи с акулой
+                  </label>
+                </p>
+              </li>
+              <li class="competition__achievements-item">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--sunburn" type="checkbox" name="competition-achieve--sunburn" checked>
+                  <label class="input-toggle__label" for="competition-achieve--sunburn">
+                    Обгорел на пляже
+                  </label>
+                </p>
+              </li>
+              <li class="competition__achievements-item">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--chuck" type="checkbox" name="competition-achieve--chuck">
+                  <label class="input-toggle__label" for="competition-achieve--chuck">
+                    Видел Чака Норриса
+                  </label>
+                </p>
+              </li>
+              <li class="competition__achievements-item">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--souvenir" type="checkbox" name="competition-achieve--souvenir">
+                  <label class="input-toggle__label" for="competition-achieve--souvenir">
+                    Накупил сувениров
+                  </label>
+                </p>
+              </li>
+              <li class="competition__achievements-item">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--tower" type="checkbox" name="competition-achieve--tower" checked>
+                  <label class="input-toggle__label" for="competition-achieve--tower">
+                    Удержал башню
+                  </label>
+                </p>
+              </li>
+              <li class="competition__achievements-item">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--hotel" type="checkbox" name="competition-achieve--hotel">
+                  <label class="input-toggle__label" for="competition-achieve--hotel">
+                    Разгромил отель
+                  </label>
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="competition__contacts-wrapper">
+          <fieldset class="competition__contacts">
+            <legend class="competition__contacts-intro">Контактная информация</legend>
+            <label class="competition__contacts-label label-text label-text--icon-phone">
+              <span>Номер телефона</span>
+              <input type="tel" name="competition-number" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="competition__contacts-label label-text label-text--icon-mail">
+              <span>Адрес почты</span>
+              <input type="email" name="competition-email" placeholder="Введите почту *">
+            </label>
+          </fieldset>
+        </div>
+        <div class="competition__app-wrapper">
+          <fieldset class="competition__app">
+            <legend class="competition__app-intro">С каким приложением путешествовали?</legend>
+            <ul class="competition__app-list">
+              <li class="competition__app-item">
+                <p class="competition__app-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-app--ios" type="radio" name="competition-app" value="competition-app--ios" checked>
+                  <label class="input-toggle__label" for="competition-app--ios">
+                    Pink для iOS
+                  </label>
+                </p>
+              </li>
+              <li class="competition__app-item">
+                <p class="competition__app-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-app--android" type="radio" name="competition-app" value="competition-app--android">
+                  <label class="input-toggle__label" for="competition-app--android">
+                    Pink на Android
+                  </label>
+                </p>
+              </li>
+              <li class="competition__app-item">
+                <p class="competition__app-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-app--wp" type="radio" name="competition-app" value="competition-app--wp">
+                  <label class="input-toggle__label" for="competition-app--wp">
+                    Windows Phone
+                  </label>
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </div>
+      <div class="competition__comment-wrapper">
+        <fieldset class="competition__comment">
+          <legend class="competition__comment-intro">Опишите свои эмоции</legend>
+          <label class="competition__comment-label">
+            <span class="visually-hidden">Коментарий</span>
+            <textarea name="competition-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </label>
+        </fieldset>
+      </div>
+      <footer class="competition__form-footer">
+        <button class="competition__form-button" type="submit">Отправить форму</button>
+        <p class="competition__form-required">
+          <abbr title="Этим символом('звёздочка'), выделены обязательные поля">*</abbr> — обязательные поля
+        </p>
+      </footer>
     </form>
   </main>
   <footer class="footer">
