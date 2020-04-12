@@ -171,3 +171,49 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding: 150px 21px 95px;
+  }
+
+  .price__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .price__table-heading {
+    min-width: 235px;
+
+    padding: 17px 0;
+
+    &--hit::before {
+      left: 0;
+    }
+
+    &--hit::after {
+      top: 5px;
+      left: 5px;
+    }
+  }
+
+  .price__table-title {
+    font-size: 18px;
+  }
+
+  .price__table-price {
+    font-size: 24px;
+  }
+
+  .price__table-value {
+    min-width: 235px;
+    padding: 15px 22px;
+
+    &--empty {
+      font-size: 18px;
+      line-height: 30px;
+
+      background-image: none;
+    }
+  }
+}
