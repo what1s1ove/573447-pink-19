@@ -80,3 +80,17 @@
     margin: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 12px 75px;
+  }
+
+  .footer__copyright {
+    small {
+      font-size: 18px;
+    }
+  }
+}
