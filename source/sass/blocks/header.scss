@@ -62,8 +62,6 @@
 }
 
 .header__navigation-list {
-  
-
   @include list-unstyled;
 
   border-bottom: 1px solid #000000;
@@ -123,8 +121,6 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    padding: 0 0 15px;
-
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
 
@@ -147,7 +143,7 @@
     margin: 0 0 100px;
   }
 
-  .header__logo  {
+  .header__logo {
     padding: 27px 20px 43px;
   }
 
@@ -156,20 +152,16 @@
     right: 20px;
   }
 
-  .header--main  .header__page-intro {
+  .header--main .header__page-intro {
     max-width: 185px;
-    padding: 0 75px;
-
     padding: 0;
-    margin-left: 75px;
+    margin: 0 0 35px 75px;
 
     font-size: 40px;
     line-height: 42px;
   }
 
   .header__page-intro {
-    margin: 0 0 35px;
-
     font-size: 50px;
     line-height: normal;
   }
@@ -252,7 +244,7 @@
     margin: 0 auto;
   }
 
-  .header__page-intro {
-    margin: 0 0 50px;
+  .header--main .header__page-intro {
+    margin: 0 0 50px 75px;
   }
 }

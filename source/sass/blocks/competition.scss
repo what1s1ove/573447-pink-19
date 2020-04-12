@@ -291,7 +291,7 @@
 
     margin: 0 0 37px;
     padding: 0 20px;
-  
+
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
@@ -303,7 +303,7 @@
 
     padding: 0 20px;
     margin: 0 0 45px;
-    
+
     background-color: transparent;
   }
 
@@ -332,7 +332,6 @@
   }
 
   .competition__comment-label {
-
     textarea {
       height: 190px;
     }
@@ -360,9 +359,9 @@
 
   .competition__intro {
     margin: 0 0 60px;
-    padding: 0 95px
+    padding: 0 95px;
   }
-  
+
   .competition__form-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -422,7 +421,7 @@
 
   .competition__app-wrapper {
     margin: 0;
-    padding: 0; 
+    padding: 0;
   }
 
   .competition__comment-wrapper {
@@ -435,7 +434,6 @@
   }
 
   .competition__comment-label {
-
     textarea {
       height: 125px;
     }

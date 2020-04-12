@@ -36,20 +36,20 @@
       position: absolute;
       top: 0;
       right: 0;
-  
+
       content: "";
       width: 60px;
       height: 60px;
-  
+
       background: #e5e5e5 no-repeat 50% 50%;
-  
+
       border-radius: 2px 2px 0 0;
     }
-  
+
     &--icon-phone::after {
       background-image: url("../img/icon-phone.svg");
     }
-  
+
     &--icon-mail::after {
       background-image: url("../img/icon-mail.svg");
     }

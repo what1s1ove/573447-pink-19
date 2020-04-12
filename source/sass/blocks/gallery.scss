@@ -132,12 +132,6 @@
 
   .gallery__item {
     width: 50%;
-
-    &--topday {
-      width: 100%;
-
-      margin: 0 0 50px;
-    }
   }
 
   .gallery__img-topday {
@@ -151,14 +145,18 @@
   }
 
   .gallery__item--topday {
+    width: 100%;
+
+    margin: 0 0 50px;
+
     .gallery__comment {
       position: relative;
-  
+
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      
+
       max-width: unset;
       width: unset;
       min-height: unset;
@@ -184,11 +182,6 @@
     .gallery__like-output {
       margin: 0 15px 0 0;
     }
-  }
-
-  .gallery__comment {
-    display: flex;
-    flex-direction: column;
   }
 
   .gallery__author-comment {
@@ -222,10 +215,6 @@
     width: 33.33%;
 
     margin: 0 0 55px;
-
-    &--topday {
-      width: 100% ;
-    }
   }
 
   .gallery__img-topday {
@@ -234,6 +223,8 @@
   }
 
   .gallery__item--topday {
+    width: 100%;
+
     .gallery__comment {
       margin: 0 10px;
 
