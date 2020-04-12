@@ -8,10 +8,11 @@
 </head>
 <body>
   <header class="header header--active">
-    <div class="header__wrapper">
-      <div class="header__navigation-wrapper header__navigation-wrapper--active">
+    <div class="header__menu-wrapper">
+      <div class="header__navigation-wrapper">
         <a class="header__logo" href="index.html">
           <picture>
+            <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
             <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
             <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
           </picture>
@@ -21,7 +22,7 @@
             <li class="header__navigation-item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="header__navigation-item">
+            <li class="header__navigation-item header__navigation-item--active">
               <a>Фотографии</a>
             </li>
             <li class="header__navigation-item">
@@ -36,6 +37,8 @@
           <span class="visually-hidden">Переключить вид меню</span>
         </button>
       </div>
+    </div>
+    <div class="header__wrapper">
       <b class="header__page-intro">Фотографии пользователей</b>
     </div>
   </header>
@@ -48,7 +51,8 @@
         <li class="gallery__item gallery__item--topday">
           <p class="gallery__img-wrapper">
             <picture>
-              <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)" >
+              <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)" >
+              <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
               <img src="img/panorama-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
             <span class="gallery__img-topday">Панорама дня</span>
@@ -70,8 +74,9 @@
         <li class="gallery__item">
           <p class="gallery__img-wrapper">
             <picture>
-              <source srcset="img/photo-car-tablet@1x.jpg" media="(min-width: 660px)" >
-              <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
+              <source srcset="img/photo-car-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-car-tablet@1x.jpg" media="(min-width: 660px)">
+              <img src="img/photo-car-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
           <blockquote class="gallery__comment">
@@ -91,8 +96,9 @@
         <li class="gallery__item">
           <p class="gallery__img-wrapper">
             <picture>
-              <source srcset="img/photo-drumset-tablet@1x.jpg" media="(min-width: 660px)" >
-              <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
+              <source srcset="img/photo-drumset-desktop@1x.jpg" media="(min-width: 960px)" >
+              <source srcset="img/photo-drumset-tablet@1x.jpg" media="(min-width: 660px)">
+              <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
           <blockquote class="gallery__comment">
@@ -112,8 +118,9 @@
         <li class="gallery__item">
           <p class="gallery__img-wrapper">
             <picture>
-              <source srcset="img/photo-window-tablet@1x.jpg" media="(min-width: 660px)" >
-              <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
+              <source srcset="img/photo-window-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-window-tablet@1x.jpg" media="(min-width: 660px)">
+              <img src="img/photo-window-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
           <blockquote class="gallery__comment">
@@ -133,8 +140,9 @@
         <li class="gallery__item">
           <p class="gallery__img-wrapper">
             <picture>
-              <source srcset="img/photo-fair-tablet@1x.jpg" media="(min-width: 660px)" >
-              <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
+              <source srcset="img/photo-fair-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-fair-tablet@1x.jpg" media="(min-width: 660px)">
+              <img src="img/photo-fair-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
           <blockquote class="gallery__comment">
@@ -154,8 +162,9 @@
         <li class="gallery__item">
           <p class="gallery__img-wrapper">
             <picture>
-              <source srcset="img/photo-pov-tablet@1x.jpg" media="(min-width: 660px)" >
-              <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
+              <source srcset="img/photo-pov-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-pov-tablet@1x.jpg" media="(min-width: 660px)">
+              <img src="img/photo-pov-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
           <blockquote class="gallery__comment">
@@ -175,8 +184,9 @@
         <li class="gallery__item">
           <p class="gallery__img-wrapper">
             <picture>
-              <source srcset="img/photo-wing-tablet@1x.jpg" media="(min-width: 660px)" >
-              <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото из приложения Pink">
+              <source srcset="img/photo-wing-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-wing-tablet@1x.jpg" media="(min-width: 660px)">
+              <img src="img/photo-wing-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
           <blockquote class="gallery__comment">
