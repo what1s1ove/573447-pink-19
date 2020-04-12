@@ -7,35 +7,37 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header__navigation-wrapper header__navigation-wrapper--active">
-      <a class="header__logo" href="index.html">
-        <picture>
-          <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
-          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
-        </picture>
-      </a>
-      <nav class="header__navigation">
-        <ul class="header__navigation-list">
-          <li class="header__navigation-item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="header__navigation-item">
-            <a>Фотографии</a>
-          </li>
-          <li class="header__navigation-item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="header__navigation-item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__toggle-button">
-        <span class="visually-hidden">Переключить вид меню</span>
-      </button>
+  <header class="header header--active">
+    <div class="header__wrapper">
+      <div class="header__navigation-wrapper header__navigation-wrapper--active">
+        <a class="header__logo" href="index.html">
+          <picture>
+            <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+          </picture>
+        </a>
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li class="header__navigation-item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="header__navigation-item">
+              <a>Фотографии</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__toggle-button">
+          <span class="visually-hidden">Переключить вид меню</span>
+        </button>
+      </div>
+      <b class="header__page-intro">Фотографии пользователей</b>
     </div>
-    <b class="header__page-intro">Фотографии пользователей</b>
   </header>
   <main>
     <h1 class="visually-hidden">Фотографии пользователей приложения Pink</h1>
