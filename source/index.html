@@ -224,15 +224,15 @@
       <p class="contacts__intro">Остались вопросы?<br>Свяжитесь с нами!</p>
       <address class="contacts__wrapper">
         <ul class="contacts__list">
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--phone">
             <b class="contacts__item-title">Звоните:</b>
             <a class="contacts__item-info" href="tel:+88125556666">+7 (812) 555-66-66</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--email">
             <b class="contacts__item-title">Пишите:</b>
             <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--address">
             <b class="contacts__item-title">Приезжайте в гости:</b>
             <a class="contacts__item-info" href="https://goo.gl/maps/upEu6HjpzXzM3d2t7">ул. Большая<br> Конюшенная, 19/8</a>
           </li>
@@ -242,7 +242,8 @@
             <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "></polygon>
           </svg>
           <picture>
-            <source srcset="img/bg-map-tablet@1x.jpg">
+            <source srcset="img/bg-map-desktop@1x.jpg" media="(min-width: 940px)">
+            <source srcset="img/bg-map-tablet@1x.jpg" media="(min-width: 660px)">
             <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8">
           </picture>
         </p>

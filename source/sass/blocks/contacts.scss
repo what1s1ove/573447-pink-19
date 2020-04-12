@@ -96,3 +96,39 @@
     margin: 0 0 5px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 75px 0 0;
+  }
+
+  .contacts__intro {
+    margin: 0 0 70px;
+
+    font-size: 50px;
+  }
+
+  .contacts__list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+  }
+
+  .contacts__item {
+    width: 33%;
+
+    &--phone {
+      order: -2;
+    }
+
+    &--address {
+      order: -1;
+    }
+  }
+
+  .contacts__item-title {
+    margin: 0 0 20px;
+  }
+}
