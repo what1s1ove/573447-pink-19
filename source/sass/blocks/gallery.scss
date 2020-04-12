@@ -172,6 +172,8 @@
     }
 
     .gallery__author-comment {
+      width: 100%;
+
       margin: 0;
     }
 
@@ -234,6 +236,8 @@
   .gallery__item--topday {
     .gallery__comment {
       margin: 0 10px;
+
+      max-width: 940px;
     }
   }
 }

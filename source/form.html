@@ -8,34 +8,36 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__wrapper">
+    <div class="header__menu-wrapper">
       <div class="header__navigation-wrapper header__navigation-wrapper--active">
-        <a class="header__logo" href="index.html">
-          <picture>
-            <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
-            <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
-          </picture>
-        </a>
-        <nav class="header__navigation">
-          <ul class="header__navigation-list">
-            <li class="header__navigation-item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="header__navigation-item">
-              <a>Конкурс</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="header__toggle-button">
-          <span class="visually-hidden">Переключить вид меню</span>
-        </button>
-      </div>
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
+              <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+            </picture>
+          </a>
+          <nav class="header__navigation">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="header__navigation-item header__navigation-item--active">
+                <a>Конкурс</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__toggle-button">
+            <span class="visually-hidden">Переключить вид меню</span>
+          </button>
+    </div>
+    <div class="header__wrapper">
       <b class="header__page-intro">Конкурс на самое безбашенное путешествие с Пинк</b>
     </div>
   </header>
@@ -62,7 +64,6 @@
         <div class="competition__achievements-wrapper">
           <fieldset class="competition__achievements">
             <legend class="competition__achievements-intro">Ваши безбашенные достижения в путешествии</legend>
-            <p class="">Ваши безбашенные достижения в путешествии</p>
             <ul class="competition__achievements-list">
               <li class="competition__achievements-item">
                 <p class="competition__achievements-input-wrapper input-toggle">
@@ -118,14 +119,20 @@
         <div class="competition__contacts-wrapper">
           <fieldset class="competition__contacts">
             <legend class="competition__contacts-intro">Контактная информация</legend>
-            <label class="competition__contacts-label label-text label-text--icon-phone">
-              <span>Номер телефона</span>
-              <input type="tel" name="competition-number" placeholder="Номер, пожалуйста">
-            </label>
-            <label class="competition__contacts-label label-text label-text--icon-mail">
-              <span>Адрес почты</span>
-              <input type="email" name="competition-email" placeholder="Введите почту *">
-            </label>
+            <ul class="competition__contacts-list">
+              <li class="competition__contacts-item">
+                <label class="competition__contacts-label label-text label-text--icon-phone">
+                  <span>Номер телефона</span>
+                  <input type="tel" name="competition-number" placeholder="Номер, пожалуйста">
+                </label>
+              </li>
+              <li class="competition__contacts-item">
+                <label class="competition__contacts-label label-text label-text--icon-mail">
+                  <span>Адрес почты</span>
+                  <input type="email" name="competition-email" placeholder="Введите почту *">
+                </label>
+              </li>
+            </ul>
           </fieldset>
         </div>
         <div class="competition__app-wrapper">
@@ -172,7 +179,7 @@
       <footer class="competition__form-footer">
         <button class="competition__form-button" type="submit">Отправить форму</button>
         <p class="competition__form-required">
-          <abbr title="Этим символом('звёздочка'), выделены обязательные поля">*</abbr> — обязательные поля
+          <abbr title="Этим символом('звёздочка'), выделены обязательные поля">*</abbr> — обязательные <span class="competition__form-required-desktop">для заполнения</span> поля
         </p>
       </footer>
     </form>
