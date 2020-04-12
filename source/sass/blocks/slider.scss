@@ -28,3 +28,50 @@
     border-color: #283645;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .slider {
+    position: relative;
+
+    padding: 0 22px;
+  }
+
+  .slider__toggles {
+
+    .slider__toggle {
+      display: none;
+    }
+    
+    .slider__toggle:first-child,
+    .slider__toggle:last-child {
+      position: absolute;
+      top: 50%;
+      transform: translateY(50%);
+
+      display: block;
+
+      width: 22px;
+      height: 41px;
+
+      background: transparent no-repeat 0 0;
+      background-size: cover;
+
+      border: 0;
+
+      cursor: pointer;
+    }
+
+    .slider__toggle:first-child {
+      left: 0;
+
+      background-image: url("../img/icon-review-arrow-left.svg");
+    }
+
+    .slider__toggle:last-child {
+      right: 0;
+
+      background-image: url("../img/icon-review-arrow-right.svg");
+    }
+  }
+}
