@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header header--main header--active">
-    <div class="header__wrapper">
+  <header class="header header--main">
+    <div class="header__menu-wrapper">
       <div class="header__navigation-wrapper">
         <a class="header__logo">
           <picture>
+            <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 960px)">
             <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
             <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
           </picture>
@@ -36,6 +37,8 @@
           <span class="visually-hidden">Переключить вид меню</span>
         </button>
       </div>
+    </div>
+    <div class="header__wrapper">
       <b class="header__page-intro">Взгляните на жизнь иначе!</b>
     </div>
     <section class="header__app app">
