@@ -44,33 +44,36 @@
   </header>
   <main>
     <h1 class="visually-hidden">Фотографии пользователей приложения Pink</h1>
+    <section class="panorama">
+      <h2 class="visually-hidden">Фотография дня</h2>
+      <div class="panorama__wrapper">
+        <p class="panorama__intro">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+        <p class="panorama__photo-wrapper">
+          <picture>
+            <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)" >
+            <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
+            <img src="img/panorama-mobile@1x.jpg" alt="Фото из приложения Pink">
+          </picture>
+          <span class="panorama__photo-topday">Панорама дня</span>
+        </p>
+        <blockquote class="panorama__comment comment">
+          <p class="comment__author-info">
+            <cite class="comment__author-name">Анна</cite>
+            <time class="comment__author-date" datetime="2020-03-29">(5 минут назад)</time>
+          </p>
+          <p class="comment__author-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="comment__like-wrapper">
+            <button class="comment__like-button" type="button">
+              <span class="visually-hidden">Мне нравится</span>
+            </button>
+            <span class="comment__like-output">Нравится: <output>215</output></span>
+          </p>
+        </blockquote>
+      </div>
+    </section>
     <section class="gallery">
       <h2 class="visually-hidden">Галерея</h2>
-      <p class="gallery__intro">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
       <ul class="gallery__list">
-        <li class="gallery__item gallery__item--topday">
-          <p class="gallery__img-wrapper">
-            <picture>
-              <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)" >
-              <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
-              <img src="img/panorama-mobile@1x.jpg" alt="Фото из приложения Pink">
-            </picture>
-            <span class="gallery__img-topday">Панорама дня</span>
-          </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Анна</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(5 минут назад)</time>
-            </p>
-            <p class="gallery__author-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
-                <span class="visually-hidden">Мне нравится</span>
-              </button>
-              <span class="gallery__like-output">Нравится: <output>215</output></span>
-            </p>
-          </blockquote>
-        </li>
         <li class="gallery__item">
           <p class="gallery__img-wrapper">
             <picture>
@@ -79,17 +82,17 @@
               <img src="img/photo-car-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Левон</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(5 часов назад)</time>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Левон</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(5 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>356</output></span>
+              <span class="comment__like-output">Нравится: <output>356</output></span>
             </p>
           </blockquote>
         </li>
@@ -101,17 +104,17 @@
               <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Антон</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(12 часов назад)</time>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Антон</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(12 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Соседи будут рады!</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Соседи будут рады!</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>666</output></span>
+              <span class="comment__like-output">Нравится: <output>666</output></span>
             </p>
           </blockquote>
         </li>
@@ -123,17 +126,17 @@
               <img src="img/photo-window-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Борис</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(20 часов назад)</time>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Борис</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(20 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>215</output></span>
+              <span class="comment__like-output">Нравится: <output>215</output></span>
             </p>
           </blockquote>
         </li>
@@ -145,17 +148,17 @@
               <img src="img/photo-fair-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Сергей</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(25 часов назад)</time>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Сергей</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(25 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Самая кубанская в мире!</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Самая кубанская в мире!</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>215</output></span>
+              <span class="comment__like-output">Нравится: <output>215</output></span>
             </p>
           </blockquote>
         </li>
@@ -167,17 +170,17 @@
               <img src="img/photo-pov-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Максим</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(40 часов назад)</time>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Максим</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(40 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Где снег-то?</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Где снег-то?</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>215</output></span>
+              <span class="comment__like-output">Нравится: <output>215</output></span>
             </p>
           </blockquote>
         </li>
@@ -189,17 +192,17 @@
               <img src="img/photo-wing-mobile@1x.jpg" alt="Фото из приложения Pink">
             </picture>
           </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Надежда</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(45 часов назад)</time>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Надежда</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(45 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Всем GM и взаимные лайки!</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Всем GM и взаимные лайки!</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>215</output></span>
+              <span class="comment__like-output">Нравится: <output>215</output></span>
             </p>
           </blockquote>
         </li>
