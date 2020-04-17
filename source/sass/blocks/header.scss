@@ -1,38 +1,63 @@
 .header {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 
-  background: no-repeat 0 0;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 700px auto;
+
+  &--active {
+    background-position: center top 255px;
+  }
 }
 
-.header__logo {
-  display: flex;
+.header__wrapper {
+  padding: 0 0 85px;
+}
 
-  padding: 22px 20px;
+.header--main .header__wrapper {
+  padding: 0 0 305px;
 
-  line-height: 0;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+}
+
+.header__menu-wrapper {
+  margin: 0 0 28px;
+
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header__navigation-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
 
-  margin: 0 0 28px;
+.header--active .header__navigation-wrapper {
+  background-color: #283645;
+}
 
-  background-color: rgba(0, 0, 0, 0.3);
+.header__logo {
+  flex-shrink: 0;
 
-  &--active {
-    background-color: #283645;
+  padding: 22px 20px;
+
+  line-height: 0;
+
+  img {
+    display: block;
   }
 }
 
 .header__navigation {
+  width: 100%;
+
   display: none;
 }
 
-.header__navigation-wrapper--active .header__navigation {
+.header--active .header__navigation {
   display: block;
 }
 
@@ -60,8 +85,8 @@
 
 .header__toggle-button {
   position: absolute;
-  right: 20px;
   top: 22px;
+  right: 20px;
 
   width: 50px;
   height: 24px;
@@ -76,18 +101,150 @@
   cursor: pointer;
 }
 
-.header__navigation-wrapper--active .header__toggle-button {
+.header--active .header__toggle-button {
   width: 24px;
   height: 23px;
 
-  background-image: url("../../img/icon-menu-cross.svg");
+  background-image: url("../img/icon-menu-cross.svg");
 }
 
 .header__page-intro {
-  margin: 0 0 33px;
+  display: block;
+
+  padding: 0 50px;
 
   text-align: center;
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+
+    &--main {
+      padding: 0 0 112px;
+
+      background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+      background-position: right -19px bottom 0, bottom;
+      background-size: auto, 1200px auto;
+    }
+  }
+
+  .header--main .header__wrapper {
+    padding: 0;
+
+    background-image: none;
+  }
+
+  .header__menu-wrapper {
+    margin: 0 0 100px;
+  }
+
+  .header__logo {
+    padding: 27px 20px 43px;
+  }
+
+  .header__toggle-button {
+    top: 44px;
+    right: 20px;
+  }
+
+  .header--main .header__page-intro {
+    max-width: 185px;
+    padding: 0;
+    margin: 0 0 35px 75px;
+
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .header__page-intro {
+    font-size: 50px;
+    line-height: normal;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: top;
+    background-size: auto, cover;
+
+    &--main {
+      padding: 0 0 115px;
+
+      background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+      background-position: left calc(50% + 65px) bottom 0, top;
+      background-size: auto, cover;
+    }
+  }
+
+  .header__menu-wrapper {
+    margin: 0 0 110px;
+  }
+
+  .header__navigation-wrapper {
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 27px 15px 43px;
+  }
+
+  .header--active .header__navigation-wrapper {
+    background-color: transparent;
+  }
+
+  .header__logo {
+    margin: 0 173px 0 0;
+    padding: 0;
+  }
+
+  .header__navigation {
+    display: block;
+  }
+
+  .header__navigation-list {
+    display: flex;
+    align-items: center;
+
+    border: 0;
+  }
+
+  .header__navigation-item {
+    margin: 0 81px 0 0;
+    padding: 0 0 5px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: capitalize;
+
+    box-shadow: none;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &--active {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+
+  .header__toggle-button {
+    display: none;
+  }
+
+  .header__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header--main .header__page-intro {
+    margin: 0 0 50px 75px;
+  }
 }

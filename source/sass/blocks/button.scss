@@ -26,3 +26,9 @@
     border: 3px solid rgba(40, 54, 69, 0.1);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    min-width: 300px;
+  }
+}

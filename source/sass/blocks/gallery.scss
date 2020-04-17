@@ -1,11 +1,5 @@
 .gallery {
-  padding: 50px 0 0;
-}
-
-.gallery__intro {
-  margin: 0 0 50px;
-
-  text-align: center;
+  padding: 20px 0 0;
 }
 
 .gallery__list {
@@ -21,7 +15,7 @@
   flex-direction: column;
   align-items: center;
 
-  margin: 0 0 20px;
+  margin: 0 0 20px 0;
 
   &:last-child {
     margin-bottom: 0;
@@ -34,77 +28,32 @@
   line-height: 0;
 }
 
-.gallery__item--topday .gallery__img-wrapper {
-  position: relative;
+@media (min-width: $tablet-width) {
+  .gallery {
+    padding: 50px 0 0;
+  }
+
+  .gallery__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+
+    margin: 0 -20px 0 0;
+  }
+
+  .gallery__item {
+    margin: 0 20px 20px 0;
+  }
 }
 
-.gallery__img-topday {
-  position: absolute;
-  top: 0;
-  right: 20px;
+@media (min-width: $desktop-width) {
+  .gallery {
+    max-width: 940px;
+    margin: 0 auto;
+  }
 
-  padding: 6px 20px;
-
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  background-color: #d22856;
-}
-
-.gallery__comment {
-  width: 100%;
-  max-width: 280px;
-  margin: 0;
-  padding: 20px 13px;
-
-  background-color: #f2f2f2;
-}
-
-.gallery__author-info {
-  margin: 0 0 5px;
-
-  line-height: 24px;
-}
-
-.gallery__author-name {
-  font-style: normal;
-  font-weight: 700;
-}
-
-.gallery__author-date {
-  text-transform: uppercase;
-  font-weight: 300;
-}
-
-.gallery__author-comment {
-  margin: 0 0 15px;
-}
-
-.gallery__like-wrapper {
-  display: flex;
-  align-items: center;
-
-  margin: 0;
-
-  line-height: 0;
-}
-
-.gallery__like-button {
-  width: 13px;
-  height: 12px;
-  margin: 0 19px 0 0;
-
-  background: transparent url("../img/icon-heart.svg");
-
-  border: 0;
-
-  cursor: pointer;
-}
-
-.gallery__like-output {
-  text-transform: uppercase;
-  color: #d22856;
+  .gallery__item {
+    margin: 0 20px 55px 0;
+  }
 }

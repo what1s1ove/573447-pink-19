@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.competition__form {
+.competition__form-wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -32,20 +32,23 @@
   }
 }
 
-.competition__achievements {
-  display: flex;
-  flex-direction: column;
-
+.competition__achievements-wrapper {
   margin: 0 0 40px;
   padding: 40px 22px 44px;
 
   background-color: #f3f3f3;
+}
+
+.competition__achievements {
+  margin: 0;
+  padding: 0;
 
   border: 0;
 }
 
 .competition__achievements-intro {
   margin: 0 0 40px;
+  padding: 0 20px;
 
   text-align: center;
   text-transform: uppercase;
@@ -65,14 +68,27 @@
   }
 }
 
-.competition__contacts {
+.competition__contacts-wrapper {
   margin: 0 0 42px;
   padding: 0 22px;
+}
+
+.competition__contacts {
+  margin: 0;
+  padding: 0;
 
   border: 0;
 }
 
-.competition__contacts-label {
+.competition__contacts-intro {
+  display: none;
+}
+
+.competition__contacts-list {
+  @include list-unstyled;
+}
+
+.competition__contacts-item {
   margin: 0 0 25px;
 
   &:last-child {
@@ -80,12 +96,16 @@
   }
 }
 
-.competition__app {
+.competition__app-wrapper {
   margin: 0 0 40px;
   padding: 40px 20px 42px;
 
   background-color: #f3f3f3;
+}
 
+.competition__app {
+  margin: 0;
+  padding: 0;
   border: 0;
 }
 
@@ -111,15 +131,21 @@
   }
 }
 
-.competition__comment {
+.competition__comment-wrapper {
   margin: 0 0 50px;
   padding: 0 22px;
+}
+
+.competition__comment {
+  margin: 0;
+  padding: 0;
 
   border: 0;
 }
 
 .competition__comment-intro {
   margin: 0 0 17px;
+  padding: 0 20px;
 
   text-align: center;
   text-transform: uppercase;
@@ -149,15 +175,20 @@
   }
 }
 
-.competition__form-button {
-  align-self: center;
+.competition__form-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.competition__form-button {
   min-width: 275px;
   margin: 0 0 45px;
-  padding: 21px 20px;
+  padding: 17px 20px;
 
   font-size: 18px;
   color: #ffffff;
+  text-transform: uppercase;
 
   background-color: #2aab6d;
 
@@ -178,5 +209,241 @@
     color: #d22856;
 
     text-decoration: none;
+  }
+}
+
+.competition__form-required-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .competition {
+    padding: 90px 0 50px;
+  }
+
+  .competition__intro {
+    margin: 0 0 75px;
+    padding: 0 85px;
+
+    font-size: 18px;
+  }
+
+  .competition__fullname-wrapper {
+    order: 1;
+  }
+
+  .competition__fullname-label {
+    flex-direction: row;
+    align-items: center;
+
+    margin: 0 0 50px;
+
+    span {
+      margin: 0 20px 0 0;
+    }
+
+    input {
+      flex-grow: 1;
+    }
+  }
+
+  .competition__achievements-wrapper {
+    order: 4;
+
+    margin: 0 0 45px;
+    padding: 0 22px;
+
+    background-color: transparent;
+  }
+
+  .competition__achievements {
+    padding: 0 50px 60px;
+
+    border: solid 2px #e5e5e5;
+  }
+
+  .competition__contacts-wrapper {
+    order: 3;
+
+    margin: 0 0 45px;
+  }
+
+  .competition__contacts {
+    padding: 0 60px 30px;
+
+    border: solid 2px #e5e5e5;
+  }
+
+  .competition__contacts-label {
+    span {
+      order: 1;
+
+      margin: 0;
+    }
+
+    input {
+      margin: 0 0 15px;
+    }
+  }
+
+  .competition__contacts-intro {
+    display: block;
+
+    margin: 0 0 37px;
+    padding: 0 20px;
+
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d22856;
+  }
+
+  .competition__app-wrapper {
+    order: 2;
+
+    padding: 0 20px;
+    margin: 0 0 45px;
+
+    background-color: transparent;
+  }
+
+  .competition__app {
+    padding: 0 60px 55px;
+
+    border: solid 2px #e5e5e5;
+  }
+
+  .competition__app-intro {
+    margin: 0 0 40px;
+  }
+
+  .competition__comment-wrapper {
+    margin: 0 0 70px;
+  }
+
+  .competition__comment {
+    padding: 0 60px 55px;
+
+    border: solid 2px #e5e5e5;
+  }
+
+  .competition__comment-intro {
+    margin: 0 0 35px;
+  }
+
+  .competition__comment-label {
+    textarea {
+      height: 190px;
+    }
+  }
+
+  .competition__form-footer {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 22px;
+  }
+
+  .competition__form-button {
+    min-width: 295px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition {
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 100px 0 0;
+  }
+
+  .competition__intro {
+    margin: 0 0 60px;
+    padding: 0 95px;
+  }
+
+  .competition__form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .competition__fullname-wrapper {
+    flex-grow: 1;
+
+    margin: 0 75px 50px 0;
+    padding: 20px 0 0;
+  }
+
+  .competition__achievements-wrapper {
+    width: 100%;
+    margin: 0 0 50px;
+    padding: 0;
+  }
+
+  .competition__achievements {
+    padding: 0 50px 10px;
+  }
+
+  .competition__achievements-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .competition__achievements-item {
+    width: 33.33%;
+  }
+
+  .competition__achievements-input-wrapper {
+    label::before {
+      margin: 0 23px 0 0;
+    }
+  }
+
+  .competition__contacts-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 50px;
+  }
+
+  .competition__contacts-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .competition__contacts-item {
+    flex-basis: 370px;
+
+    margin: 0;
+  }
+
+  .competition__app-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .competition__comment-wrapper {
+    margin: 0 0 70px;
+    padding: 0;
+  }
+
+  .competition__comment {
+    padding: 0 60px 45px;
+  }
+
+  .competition__comment-label {
+    textarea {
+      height: 125px;
+    }
+  }
+
+  .competition__form-footer {
+    padding: 0;
+  }
+
+  .competition__form-required-desktop {
+    display: inline;
   }
 }
