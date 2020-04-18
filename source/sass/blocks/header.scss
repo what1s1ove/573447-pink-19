@@ -3,8 +3,8 @@
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: 700px auto;
+  background-position: center top -5px;
+  background-size: 710px auto;
 
   &--active,
   &--nojs {
@@ -17,7 +17,7 @@
 }
 
 .header--main .header__wrapper {
-  padding: 0 0 305px;
+  padding: 0 0 312px;
 
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@
 }
 
 .header__menu-wrapper {
-  margin: 0 0 28px;
+  margin: 0 0 23px;
 
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -67,12 +67,15 @@
 .header__navigation-list {
   @include list-unstyled;
 
+  margin: 3px 0 0;
+
   border-bottom: 1px solid #000000;
 }
 
 .header__navigation-item {
   padding: 21px 0;
 
+  font-size: 18px;
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
@@ -114,7 +117,7 @@
 .header__page-intro {
   display: block;
 
-  padding: 0 50px;
+  padding: 0 15px;
 
   text-align: center;
   font-size: 24px;
