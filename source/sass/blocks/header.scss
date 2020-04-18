@@ -13,7 +13,7 @@
 }
 
 .header__wrapper {
-  padding: 0 0 85px;
+  padding: 0 0 80px;
 }
 
 .header--main .header__wrapper {
@@ -25,9 +25,13 @@
 }
 
 .header__menu-wrapper {
-  margin: 0 0 23px;
+  margin: 0 0 31px;
 
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header--main .header__menu-wrapper {
+  margin: 0 0 23px;
 }
 
 .header__navigation-wrapper {
