@@ -89,13 +89,23 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 70px 12px 75px;
+    padding: 70px 0 75px 12px;
+  }
+
+  .footer__social-item {
+    margin: 0 15px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 
   .footer__copyright {
     small {
+      margin: 0 8px 0 0;
+
       font-size: 18px;
     }
   }

@@ -75,30 +75,31 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding: 72px 20px 40px;
+    padding: 72px 10px 15px;
   }
 
   .reviews__wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .reviews__list {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
   }
 
   .reviews__item {
-    padding: 120px 105px 0;
+    padding: 115px 90px 0;
 
     background: url("../img/icon-quotes.svg") no-repeat 50% 0;
   }
 
   .reviews__author-name {
+    margin: 0 0 1px;
+
     font-size: 24px;
   }
 
   .reviews__author-desc {
     font-size: 18px;
+  }
+
+  .reviews__author-text {
+    margin: 0 0 33px;
   }
 }

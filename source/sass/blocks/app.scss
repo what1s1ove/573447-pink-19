@@ -111,15 +111,23 @@
 
 @media (min-width: $desktop-width) {
   .app {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
+  }
+
+  .app__wrapper {
+    max-width: 325px;
+    padding: 0 10px;
+  }
+
+  .app__application-list {
+    margin: 0 0 58px;
   }
 
   .app__download-button {
     margin: 0 0 65px;
-  }
+    padding: 11px 15px;
 
-  .app__application-list {
-    margin: 0 0 60px;
+    font-size: 21px;
   }
 }

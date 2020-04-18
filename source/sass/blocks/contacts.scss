@@ -66,6 +66,8 @@
   img {
     position: absolute;
     bottom: 0;
+
+    width: 100%;
   }
 }
 
@@ -112,18 +114,14 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding: 75px 0 0;
-  }
-
-  .contacts__wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 64px 0 0;
   }
 
   .contacts__intro {
-    margin: 0 0 70px;
+    margin: 0 0 56px;
 
     font-size: 50px;
+    line-height: 60px;
   }
 
   .contacts__list {
@@ -132,6 +130,8 @@
     align-items: flex-start;
 
     width: 100%;
+    max-width: 960px;
+    margin: 0 auto 25px;
   }
 
   .contacts__item {
@@ -147,6 +147,10 @@
   }
 
   .contacts__item-title {
-    margin: 0 0 20px;
+    margin: 0 0 23px;
+  }
+
+  .contacts__map-wrapper {
+    height: 480px;
   }
 }

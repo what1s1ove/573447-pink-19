@@ -13,7 +13,9 @@
     margin: 0 auto;
     padding: 96px 10px 30px 312px;
 
-    background: url("../img/clock.svg") no-repeat 0px 58px;
+    background-image: url("../img/clock.svg");
+    background-repeat: no-repeat ;
+    background-position:  0px 58px;
     background-size: 243px auto;
   }
 
@@ -45,13 +47,14 @@
 
   .article__wrapper {
     max-width: 960px;
-    padding: 157px 0 113px 365px;
+    padding: 159px 75px 110px 377px;
 
-    background-size: 305px auto;
+    background-position: 10px 65px;
+    background-size: 300px auto;
   }
 
   .article__title {
-    margin: 0 0 20px;
+    margin: 0 0 24px;
 
     line-height: 30px;
 
@@ -61,7 +64,7 @@
   }
 
   .article__text {
-    margin: 0 0 20px;
+    margin: 0 0 31px;
 
     font-size: 18px;
     line-height: 30px;
