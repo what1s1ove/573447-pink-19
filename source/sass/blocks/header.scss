@@ -6,7 +6,8 @@
   background-position: top;
   background-size: 700px auto;
 
-  &--active {
+  &--active,
+  &--nojs {
     background-position: center top 255px;
   }
 }
@@ -35,7 +36,8 @@
   align-items: flex-start;
 }
 
-.header--active .header__navigation-wrapper {
+.header--active .header__navigation-wrapper,
+.header--nojs .header__navigation-wrapper  {
   background-color: #283645;
 }
 
@@ -57,7 +59,8 @@
   display: none;
 }
 
-.header--active .header__navigation {
+.header--active .header__navigation,
+.header--nojs .header__navigation {
   display: block;
 }
 
