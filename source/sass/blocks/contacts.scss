@@ -56,15 +56,22 @@
 
 .contacts__map-wrapper {
   position: relative;
-
+  
+  height: 195px;
+  width: 100%;
   margin: 0;
 
+  overflow: hidden;
+
   img {
-    display: block;
+    position: absolute;
+    bottom: 0;
   }
 }
 
 .contacts__map-triangle {
+  z-index: 1;
+
   position: absolute;
   top: 0;
 
@@ -73,10 +80,10 @@
 
 @media (min-width: $tablet-width) {
   .contacts__intro {
-    margin: 0 0 50px;
+    margin: 0 0 42px;
 
     font-size: 40px;
-    line-height: normal;
+    line-height: 50px;
   }
 
   .contacts__list {
@@ -84,6 +91,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
+    margin: 0 0 26px;
   }
 
   .contacts__item {
@@ -94,6 +103,10 @@
 
   .contacts__item-title {
     margin: 0 0 5px;
+  }
+
+  .contacts__map-wrapper {
+    height: 375px;
   }
 }
 

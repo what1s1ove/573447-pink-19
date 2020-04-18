@@ -8,13 +8,13 @@
   }
 
   .article__wrapper {
-    max-width: 620px;
+    max-width: 627px;
     min-height: 335px;
     margin: 0 auto;
-    padding: 96px 0 110px 315px;
+    padding: 96px 10px 30px 312px;
 
-    background: url("../img/clock.svg") no-repeat 20px 59px;
-    background-size: 260px auto;
+    background: url("../img/clock.svg") no-repeat 0px 58px;
+    background-size: 243px auto;
   }
 
   .article__title {
@@ -26,7 +26,7 @@
   }
 
   .article__text {
-    margin: 0 0 10px;
+    margin: 0 0 8px;
 
     line-height: 24px;
   }
