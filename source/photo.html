@@ -47,7 +47,7 @@
     <section class="panorama">
       <h2 class="visually-hidden">Фотография дня</h2>
       <div class="panorama__wrapper">
-        <p class="panorama__intro">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+        <p class="panorama__intro">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
         <p class="panorama__photo-wrapper">
           <picture>
             <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)" >
@@ -212,69 +212,71 @@
       <h2 class="visually-hidden">Загрузка своей фотографии в приложение Pink</h2>
       <p class="new-post__intro">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       <form class="new-post__form" name="new-post__form" method="post" action="https://echo.htmlacademy.ru">
-        <label class="new-post__load-input">
-          <picture>
-            <source srcset="img/photo-road-desktop@1x.jpg" media="(min-width: 960px)">
-            <source srcset="img/photo-road-tablet@1x.jpg" media="(min-width: 660px)">
-            <img src="img/photo-road-mobile@1x.jpg" alt="Пример загрузки фотографии для приложения Pink">
-          </picture>
-          <input class="visually-hidden" type="file" name="new-post-picture">
-          <span class="visually-hidden">Загрузка фотографии</span>
-        </label>
         <div class="new-post__form-wrapper">
-          <ul class="new-post__contol-list">
-            <li class="new-post__contol-item new-post__contol-item--crop new-post__contol-item--active">
-              <button class="new-post__contol-button" type="button">
-                <svg fill="#283645" xmlns="http://www.w3.org/2000/svg"  width="48px" height="48px" viewBox="0 0 48 48" aria-hidden="true">
-                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                </svg>
-                <span class="visually-hidden">Обрезка фотографии</span>
-              </button>
-              <div class="new-post__filter-wrapper">
-                <div class="new-post__filter-track">
-                  <span class="new-post__filter-trumb">
-                    <span class="visually-hidden">Насыщеность фильтра</span>
-                  </span>
+          <label class="new-post__load-input">
+            <picture>
+              <source srcset="img/photo-road-desktop@1x.jpg" media="(min-width: 960px)">
+              <source srcset="img/photo-road-tablet@1x.jpg" media="(min-width: 660px)">
+              <img src="img/photo-road-mobile@1x.jpg" alt="Пример загрузки фотографии для приложения Pink">
+            </picture>
+            <input class="visually-hidden" type="file" name="new-post-picture">
+            <span class="visually-hidden">Загрузка фотографии</span>
+          </label>
+          <div class="new-post__form-actions">
+            <ul class="new-post__contol-list">
+              <li class="new-post__contol-item new-post__contol-item--crop new-post__contol-item--active">
+                <button class="new-post__contol-button" type="button">
+                  <svg fill="#283645" xmlns="http://www.w3.org/2000/svg"  width="48px" height="48px" viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                  </svg>
+                  <span class="visually-hidden">Обрезка фотографии</span>
+                </button>
+                <div class="new-post__filter-wrapper">
+                  <div class="new-post__filter-track">
+                    <span class="new-post__filter-trumb">
+                      <span class="visually-hidden">Насыщеность фильтра</span>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="new-post__contol-item new-post__contol-item--fill">
-              <button class="new-post__contol-button" type="button">
-                <svg fill="#283645" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 48 48" aria-hidden="true">
-                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                  <rect y="40" width="48" height="3"/>
-                </svg>
-                <span class="visually-hidden">Заливка фотографии</span>
-              </button>
-              <div class="new-post__filter-wrapper">
-                <div class="new-post__filter-track">
-                  <span class="new-post__filter-trumb">
-                    <span class="visually-hidden">Насыщеность фильтра</span>
-                  </span>
+              </li>
+              <li class="new-post__contol-item new-post__contol-item--fill">
+                <button class="new-post__contol-button" type="button">
+                  <svg fill="#283645" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 48 48" aria-hidden="true">
+                    <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                    <rect y="40" width="48" height="3"/>
+                  </svg>
+                  <span class="visually-hidden">Заливка фотографии</span>
+                </button>
+                <div class="new-post__filter-wrapper">
+                  <div class="new-post__filter-track">
+                    <span class="new-post__filter-trumb">
+                      <span class="visually-hidden">Насыщеность фильтра</span>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="new-post__contol-item new-post__contol-item--contrast">
-              <button class="new-post__contol-button" type="button">
-                <svg fill="#283645" xmlns="http://www.w3.org/2000/svg" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" aria-hidden="true">
-                  <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                </svg>
-                <span class="visually-hidden">Инверсия фотографии</span>
-              </button>
-              <div class="new-post__filter-wrapper">
-                <div class="new-post__filter-track">
-                  <span class="new-post__filter-trumb">
-                    <span class="visually-hidden">Насыщеность фильтра</span>
-                  </span>
+              </li>
+              <li class="new-post__contol-item new-post__contol-item--contrast">
+                <button class="new-post__contol-button" type="button">
+                  <svg fill="#283645" xmlns="http://www.w3.org/2000/svg" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" aria-hidden="true">
+                    <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                  </svg>
+                  <span class="visually-hidden">Инверсия фотографии</span>
+                </button>
+                <div class="new-post__filter-wrapper">
+                  <div class="new-post__filter-track">
+                    <span class="new-post__filter-trumb">
+                      <span class="visually-hidden">Насыщеность фильтра</span>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-          <p class="new-post__buttons-wrpper">
-            <button class="new-post__submit-button button button--pink" type="submit">Запостить</button>
-            <button class="new-post__reset-button button button--gray" type="reset">Отмена</button>
-          </p>
+              </li>
+            </ul>
+            <p class="new-post__buttons-wrapper">
+              <button class="new-post__submit-button button button--pink" type="submit">Запостить</button>
+              <button class="new-post__reset-button button button--gray" type="reset">Отмена</button>
+            </p>
+          </div>
         </div>
       </form>
     </section>

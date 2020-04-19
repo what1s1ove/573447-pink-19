@@ -64,8 +64,9 @@
   .footer {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
-    padding: 36px 13px 50px 20px;
+    padding: 36px 20px 50px;
 
     &--main {
       display: flex;
@@ -80,17 +81,17 @@
 
   .footer__social-list {
     margin: 0;
-    padding: 8px 0 0;
+    padding: 3px 0 0;
   }
 
   .footer__social-item {  
     &:last-child {
       margin: 0 19px 0 0;
     }
-  }  
+  }
 
   .footer__copyright {
-    align-self: flex-end;
+    padding: 5px 0 0;
   }
 }
 

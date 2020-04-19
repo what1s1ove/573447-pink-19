@@ -132,7 +132,12 @@
 @media (min-width: $tablet-width) {
   .header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: cover;
+    background-position: top;
+    background-size: 1200px auto;
+
+    &--active {
+      background-position: center top 255px;
+    }
 
     &--main {
       padding: 0 0 108px;
@@ -149,7 +154,15 @@
     background-image: none;
   }
 
+  .header__wrapper {
+    padding: 0 0 139px;
+  }
+
   .header__menu-wrapper {
+    margin: 0 0 71px;
+  }
+
+  .header--main .header__menu-wrapper {
     margin: 0 0 92px;
   }
 
@@ -178,7 +191,7 @@
 
   .header__page-intro {
     font-size: 50px;
-    line-height: normal;
+    line-height: 60px;
   }
 }
 
