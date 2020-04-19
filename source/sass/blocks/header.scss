@@ -60,8 +60,9 @@
     fill: #d22856;
   }
 
-  &[href]:active svg { 
+  &[href]:active svg {
     fill: #ffffff;
+
     opacity: 0.3;
   }
 }
@@ -139,7 +140,7 @@
 
   &:active svg {
     fill: #d22856;
-    
+
     opacity: 0.3;
   }
 }
@@ -271,11 +272,10 @@
   .header--main .header__menu-wrapper {
     margin: 0 0 110px;
   }
-  
 
   .header__menu-wrapper {
     margin: 0 0 65px;
-  } 
+  }
 
   .header__navigation-wrapper {
     flex-direction: row;
@@ -298,7 +298,7 @@
   .header__logo-tablet {
     display: none;
   }
-  
+
   .header__logo-desktop {
     display: block;
   }
