@@ -25,6 +25,15 @@
     border-radius: 2px;
   }
 
+  input:hover,
+  input:focus {
+    border-color: #283645;
+  }
+
+  input:active {
+    border-color: #d22856;
+  }
+
   input::placeholder {
     color: #283645;
   }

@@ -19,6 +19,17 @@
   }
 }
 
+.input-toggle__input {
+  &:hover + .input-toggle__label::before,
+  &:focus + .input-toggle__label::before {
+    border-color: #283645;
+  }
+
+  &:active + .input-toggle__label::before {
+    border-color: #d22856;
+  }
+}
+
 .input-toggle__input[type="checkbox"] + .input-toggle__label::before {
   width: 39px;
   height: 39px;
