@@ -1,6 +1,8 @@
 .header {
   position: relative;
 
+  min-height: 240px;
+
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top -5px;
@@ -8,12 +10,14 @@
 
   &--active,
   &--nojs {
+    min-height: 500px;
+
     background-position: center top 255px;
   }
 }
 
 .header__wrapper {
-  padding: 0 0 80px;
+  padding: 0 0 15px;
 }
 
 .header--main .header__wrapper {
@@ -131,11 +135,16 @@
 
 @media (min-width: $tablet-width) {
   .header {
+    min-height: 440px;
+
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: top;
     background-size: 1200px auto;
 
-    &--active {
+    &--active,
+    &--nojs {
+      min-height: 700px;
+
       background-position: center top 255px;
     }
 
@@ -152,10 +161,6 @@
     padding: 0;
 
     background-image: none;
-  }
-
-  .header__wrapper {
-    padding: 0 0 139px;
   }
 
   .header__menu-wrapper {

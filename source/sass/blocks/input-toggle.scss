@@ -11,7 +11,7 @@
   cursor: pointer;
 
   &::before {
-    margin: 0 32px 0 0;
+    content: "";
 
     background: #ffffff no-repeat 50% 50%;
 
@@ -20,9 +20,9 @@
 }
 
 .input-toggle__input[type="checkbox"] + .input-toggle__label::before {
-  content: "";
-  width: 35px;
-  height: 35px;
+  width: 39px;
+  height: 39px;
+  margin: 0 30px 0 0;
 }
 
 .input-toggle__input[type="checkbox"]:checked + .input-toggle__label::before {
@@ -30,13 +30,23 @@
 }
 
 .input-toggle__input[type="radio"] + .input-toggle__label::before {
-  content: "";
   width: 37px;
   height: 37px;
+  margin: 0 32px 0 0;
 
   border-radius: 50%;
 }
 
 .input-toggle__input[type="radio"]:checked + .input-toggle__label::before {
   background-image: url("../../img/icon-map-marker.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .input-toggle__input[type="checkbox"] + .input-toggle__label::before {
+    margin: 0 20px 0 0;
+  }
+
+  .input-toggle__input[type="radio"] + .input-toggle__label::before {
+    margin: 0 20px 0 0;
+  }
 }
