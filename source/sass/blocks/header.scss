@@ -56,9 +56,22 @@
 
   line-height: 0;
 
-  img {
-    display: block;
+  &[href]:hover svg {
+    fill: #d22856;
   }
+
+  &[href]:active svg { 
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+.header__logo-tablet {
+  display: none;
+}
+
+.header__logo-desktop {
+  display: none;
 }
 
 .header__navigation {
@@ -95,6 +108,14 @@
     color: #ffffff;
     text-decoration: none;
   }
+
+  a[href]:hover {
+    color: #d22856;
+  }
+
+  a[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .header__toggle-button {
@@ -106,20 +127,42 @@
   height: 24px;
   padding: 0;
 
-  background: transparent no-repeat 0 0;
-  background-image: url("../img/icon-menu-burger.svg");
-  background-size: contain;
+  background-color: transparent;
 
   border: 0;
 
   cursor: pointer;
+
+  &:hover svg {
+    fill: #d22856;
+  }
+
+  &:active svg {
+    fill: #d22856;
+    
+    opacity: 0.3;
+  }
 }
 
 .header--active .header__toggle-button {
   width: 24px;
   height: 23px;
+}
 
-  background-image: url("../img/icon-menu-cross.svg");
+.header__toggle-button-burger {
+  display: block;
+}
+
+.header--active .header__toggle-button-burger {
+  display: none;
+}
+
+.header__toggle-button-cross {
+  display: none;
+}
+
+.header--active .header__toggle-button-cross {
+  display: block;
 }
 
 .header__page-intro {
@@ -173,6 +216,14 @@
 
   .header__logo {
     padding: 27px 20px 43px;
+  }
+
+  .header__logo-mobile {
+    display: none;
+  }
+
+  .header__logo-tablet {
+    display: block;
   }
 
   .header__navigation-list {
@@ -244,6 +295,14 @@
     padding: 0;
   }
 
+  .header__logo-tablet {
+    display: none;
+  }
+  
+  .header__logo-desktop {
+    display: block;
+  }
+
   .header__navigation {
     display: block;
   }
@@ -283,6 +342,10 @@
       height: 2px;
 
       background-color: #ffffff;
+    }
+
+    a:active {
+      color: #ffffff;
     }
   }
 
