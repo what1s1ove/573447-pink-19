@@ -379,14 +379,18 @@
 
 @media (min-width: $desktop-width) {
   .competition {
-    max-width: 935px;
+    max-width: 940px;
     margin: 0 auto;
-    padding: 100px 0 0;
+    padding: 93px 0 0;
   }
 
   .competition__intro {
-    margin: 0 0 60px;
-    padding: 0 95px;
+    margin: 0 0 70px;
+    padding: 0 80px;
+
+    span {
+      display: inline;
+    }
   }
 
   .competition__form-wrapper {
@@ -398,29 +402,66 @@
   }
 
   .competition__fullname-wrapper {
-    flex-grow: 1;
+    min-width: 435px;
 
-    margin: 0 75px 50px 0;
-    padding: 20px 0 0;
+    margin: 0 0 59px 0;
+    padding: 15px 0 0;
   }
 
   .competition__achievements-wrapper {
     width: 100%;
-    margin: 0 0 50px;
+    margin: 0 0 56px;
     padding: 0;
   }
 
   .competition__achievements {
-    padding: 0 50px 10px;
+    padding: 0 40px 12px 60px;
   }
 
   .competition__achievements-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
   }
 
   .competition__achievements-item {
-    width: 33.33%;
+    &--shark {
+      order: 1;
+
+      flex-basis: 310px;
+    }
+
+    &--chuck {
+      order: 2;
+
+      flex-basis: 290px;
+    }
+
+    &--tower {
+      order: 3;
+
+      flex-basis: 229px;
+    }
+
+    &--sunburn {
+      order: 4;
+
+      flex-basis: 310px;
+    }
+
+    &--souvenir {
+      order: 5;
+
+      flex-basis: 290px;
+    }
+
+    &--hotel {
+      order: 6;
+
+      flex-basis: 229px;
+    }
   }
 
   .competition__achievements-input-wrapper {
@@ -432,7 +473,15 @@
   .competition__contacts-wrapper {
     width: 100%;
     padding: 0;
-    margin: 0 0 50px;
+    margin: 0 0 56px;
+  }
+
+  .competition__contacts {
+    padding: 0 63px 20px 58px;
+  }
+
+  .competition__contacts-intro {
+    margin: 0 0 34px;
   }
 
   .competition__contacts-list {
@@ -451,18 +500,31 @@
     padding: 0;
   }
 
+  .competition__app {
+    max-width: 436px;
+    padding: 0 32px 57px 32px;
+  }
+
+  .competition__app-list {
+    padding: 0 0 0 45px;
+  }
+
   .competition__comment-wrapper {
-    margin: 0 0 70px;
+    margin: 0 0 66px;
     padding: 0;
   }
 
   .competition__comment {
-    padding: 0 60px 45px;
+    padding: 0 58px 42px;
+  }
+
+  .competition__comment-intro {
+    margin: 0 0 34px;
   }
 
   .competition__comment-label {
     textarea {
-      height: 125px;
+      height: 128px;
     }
   }
 
