@@ -105,7 +105,17 @@
 
 @media (min-width: $desktop-width) {
   .panorama__intro {
-    margin: 0 0 80px;
+    margin: 0 0 88px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .panorama__photo-wrapper {
+    img {
+      min-height: 506px;
+    }
   }
 
   .panorama__photo-topday {
@@ -114,8 +124,12 @@
   }
 
   .panorama__comment {
-    margin: 0 10px;
-
     max-width: 940px;
+    margin: 0 10px;
+    padding: 25px 29px 23px;
+
+    .comment__like-output {
+      margin: 0 19px 0 0;
+    }
   }
 }

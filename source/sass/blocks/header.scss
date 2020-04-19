@@ -210,9 +210,14 @@
     }
   }
 
-  .header__menu-wrapper {
+  .header--main .header__menu-wrapper {
     margin: 0 0 110px;
   }
+  
+
+  .header__menu-wrapper {
+    margin: 0 0 65px;
+  } 
 
   .header__navigation-wrapper {
     flex-direction: row;
@@ -259,7 +264,18 @@
     }
 
     &--active {
-      border-bottom: 2px solid #ffffff;
+      position: relative;
+    }
+
+    &--active::before {
+      position: absolute;
+      bottom: -10px;
+
+      content: "";
+      width: 100%;
+      height: 2px;
+
+      background-color: #ffffff;
     }
   }
 
@@ -270,6 +286,11 @@
   .header__wrapper {
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 0 100px;
+  }
+
+  .header__wrapper .header--main {
+    padding: 0 0 139px;
   }
 
   .header--main .header__page-intro {
@@ -278,5 +299,10 @@
 
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .header__page-intro {
+    max-width: 500px;
+    margin: 0 auto;
   }
 }

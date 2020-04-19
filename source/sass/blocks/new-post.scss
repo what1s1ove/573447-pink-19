@@ -251,42 +251,87 @@
 
 @media (min-width: $desktop-width) {
   .new-post {
-    padding: 10px 0 0;
+    padding: 5px 0 30px;
+  }
+
+  .new-post__intro {
+    margin: 0 0 68px;
   }
 
   .new-post__form {
-    justify-content: space-between;
-    align-items: flex-start;
-
-    max-width: 960px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 57px 60px 57px 80px;
   }
+
+  .new-post__form-wrapper {
+    max-width: unset;
+    margin: 0;
+  }
+  
 
   .new-post__load-input {
     margin: 0 90px 0 0;
   }
 
+  .new-post__form-actions {
+    align-items: initial;
+  }
+
   .new-post__contol-list {
     margin: 0 0 145px;
+    padding: 0;
   }
 
   .new-post__contol-item {
-    margin: 0 0 13px;
-    padding: 0 30px 13px 0;
+    min-width: 410px;
+    margin: 0 0 15px;
+    padding: 0 30px 10px 0;
+
+    &:last-child {
+      margin: 0;
+
+      padding: 0 0 20px 9px;
+    }
+
+   &--crop svg {
+    width: 44px;
+    height: 44px;
+    }
+
+    &--crop .new-post__filter-trumb {
+      left: 72px;
+    }
+
+    &--fill svg {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--fill .new-post__filter-trumb {
+      left: 248px;
+    }
+
+    &--contrast svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    &--contrast .new-post__filter-trumb {
+      right: 110px;
+    }
   }
 
   .new-post__contol-button {
     margin: 0 48px 0 0;
-
-    svg {
-      width: 44px;
-      height: 44px;
-    }
   }
 
   .new-post__filter-wrapper {
     width: 288px;
+  }
+
+  .new-post__filter-track {
+    width: 290px;
   }
 
   .new-post__buttons-wrapper {
@@ -297,10 +342,10 @@
   .new-post__submit-button {
     margin: 0;
 
-    min-width: 183px;
+    min-width: 186px;
   }
 
   .new-post__reset-button {
-    min-width: 183px;
+    min-width: 186px;
   }
 }

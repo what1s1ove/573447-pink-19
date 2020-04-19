@@ -59,7 +59,7 @@
   color: #d22856;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .comment {
     display: flex;
     flex-direction: column;
@@ -67,6 +67,10 @@
     max-width: 300px;
     min-height: 155px;
     padding: 25px 31px 28px 28px;
+  }
+
+  .comment__author-info {
+    line-height: 22px;
   }
 
   .comment__author-comment {
