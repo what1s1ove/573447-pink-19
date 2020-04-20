@@ -1,5 +1,5 @@
 .reviews {
-  padding: 50px 22px 10px;
+  padding: 44px 20px;
 }
 
 .reviews__wrapper {
@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: nowrap;
 
-  margin: 0 0 40px;
+  margin: 0 0 33px;
 }
 
 .reviews__item-wrapper {
@@ -27,10 +27,11 @@
 }
 
 .reviews__author-info {
-  margin: 0 0 15px;
+  margin: 0 0 10px;
 }
 
 .reviews__author-name {
+  font-size: 18px;
   line-height: normal;
   font-weight: 700;
   font-style: normal;
@@ -43,7 +44,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding: 100px 20px 20px;
+    padding: 91px 20px 22px;
   }
 
   .reviews__author-info {
@@ -58,13 +59,13 @@
   .reviews__author-name {
     font-size: 20px;
 
-    margin: 0 0 5px;
+    margin: 0 0 4px;
   }
 
   .reviews__author-text {
     font-size: 18px;
 
-    margin: 0 0 30px;
+    margin: 0 0 36px;
   }
 
   .reviews__author-desc {
@@ -72,32 +73,33 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .reviews {
-    padding: 72px 20px 40px;
+    padding: 72px 10px 15px;
   }
 
   .reviews__wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .reviews__list {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
   }
 
   .reviews__item {
-    padding: 120px 105px 0;
+    padding: 115px 90px 0;
 
     background: url("../img/icon-quotes.svg") no-repeat 50% 0;
   }
 
   .reviews__author-name {
+    margin: 0 0 1px;
+
     font-size: 24px;
   }
 
   .reviews__author-desc {
     font-size: 18px;
+  }
+
+  .reviews__author-text {
+    margin: 0 0 33px;
   }
 }

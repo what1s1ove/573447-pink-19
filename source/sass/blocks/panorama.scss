@@ -1,5 +1,5 @@
 .panorama {
-  padding: 50px 0 0;
+  padding: 46px 0 0;
 }
 
 .panorama__wrapper {
@@ -33,7 +33,7 @@
   top: 0;
   right: 20px;
 
-  padding: 6px 20px;
+  padding: 5px 20px;
 
   font-size: 12px;
   line-height: 24px;
@@ -46,13 +46,24 @@
 
 @media (min-width: $tablet-width) {
   .panorama {
-    padding: 80px 0 0;
+    padding: 92px 0 0;
   }
 
   .panorama__intro {
-    margin: 0 0 70px;
+    margin: 0 0 76px;
+    padding: 0 50px;
 
     font-size: 18px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .panorama__photo-wrapper {
+    img {
+      min-height: 509px;
+    }
   }
 
   .panorama__photo-topday {
@@ -69,6 +80,7 @@
     width: unset;
     min-height: unset;
     margin: 0 20px;
+    padding: 25px 28px 23px;
 
     .comment__author-info {
       order: -2;
@@ -86,14 +98,24 @@
     }
 
     .comment__like-output {
-      margin: 0 15px 0 0;
+      margin: 0 17px 0 0;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .panorama__intro {
-    margin: 0 0 80px;
+    margin: 0 0 88px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .panorama__photo-wrapper {
+    img {
+      min-height: 506px;
+    }
   }
 
   .panorama__photo-topday {
@@ -102,8 +124,12 @@
   }
 
   .panorama__comment {
-    margin: 0 10px;
-
     max-width: 940px;
+    margin: 0 10px;
+    padding: 25px 29px 23px;
+
+    .comment__like-output {
+      margin: 0 19px 0 0;
+    }
   }
 }

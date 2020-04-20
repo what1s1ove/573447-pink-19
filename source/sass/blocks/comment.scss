@@ -3,13 +3,13 @@
   max-width: 280px;
   min-height: 121px;
   margin: 0;
-  padding: 20px 13px;
+  padding: 18px 10px 26px 18px;
 
   background-color: #f2f2f2;
 }
 
 .comment__author-info {
-  margin: 0 0 5px;
+  margin: 0;
 
   line-height: 24px;
 }
@@ -21,9 +21,9 @@
 }
 
 .comment__author-date {
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: 300;
-  line-height: 12px;
 }
 
 .comment__author-comment {
@@ -54,6 +54,7 @@
 }
 
 .comment__like-output {
+  font-size: 12px;
   text-transform: uppercase;
   color: #d22856;
 }
@@ -65,7 +66,11 @@
 
     max-width: 300px;
     min-height: 155px;
-    padding: 25px;
+    padding: 25px 31px 28px 28px;
+  }
+
+  .comment__author-info {
+    line-height: 22px;
   }
 
   .comment__author-comment {
