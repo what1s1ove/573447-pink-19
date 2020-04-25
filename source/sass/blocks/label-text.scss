@@ -41,15 +41,19 @@
 
 @media (min-width: $tablet-width) {
   .label-text {
+    input {
+      padding: 14px 65px 14px 20px;
+    }
+
     &--icon-phone::after,
     &--icon-mail::after {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 2px;
+      right: 2px;
 
       content: "";
-      width: 60px;
-      height: 60px;
+      width: 58px;
+      height: 58px;
 
       background: #e5e5e5 no-repeat 50% 50%;
 
