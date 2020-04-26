@@ -54,13 +54,23 @@
     padding: 0 22px;
   }
 
-  .slider__toggles {
-    .slider__toggle {
-      display: none;
+  .slider__toggle {
+    display: none;
+
+    &--active {
+      opacity: 0.3;
     }
 
-    .slider__toggle:first-child,
-    .slider__toggle:last-child {
+    &--active:hover {
+      opacity: 0.6;
+    }
+
+    &--active:active {
+      opacity: 0.1;
+    }
+
+    &:first-child,
+    &:last-child {
       position: absolute;
       top: 36%;
       transform: translateY(50%);
@@ -78,16 +88,16 @@
       cursor: pointer;
     }
 
-    .slider__toggle:first-child {
+    &:first-child {
       left: 0;
 
-      background-image: url("../img/icon-review-arrow-left.svg");
+      background-image: url("../img/review-arrow-left.svg");
     }
 
-    .slider__toggle:last-child {
+    &:last-child {
       right: 0;
 
-      background-image: url("../img/icon-review-arrow-right.svg");
+      background-image: url("../img/review-arrow-right.svg");
     }
   }
 }
