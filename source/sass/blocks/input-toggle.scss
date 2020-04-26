@@ -37,7 +37,7 @@
 }
 
 .input-toggle__input[type="checkbox"]:checked + .input-toggle__label::before {
-  background-image: url("../img/icon-yes--pink.svg");
+  background-image: url("../img/yes--pink.svg");
 }
 
 .input-toggle__input[type="radio"] + .input-toggle__label::before {
@@ -49,7 +49,7 @@
 }
 
 .input-toggle__input[type="radio"]:checked + .input-toggle__label::before {
-  background-image: url("../../img/icon-map-marker.svg");
+  background-image: url("../../img/map-marker.svg");
 }
 
 @media (min-width: $tablet-width) {
