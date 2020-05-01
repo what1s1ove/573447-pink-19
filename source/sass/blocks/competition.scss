@@ -501,6 +501,7 @@
   .competition__contacts-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .competition__contacts-item {
