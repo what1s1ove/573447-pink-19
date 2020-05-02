@@ -11,7 +11,7 @@
 
   &--active,
   &--nojs {
-    min-height: 500px;
+    min-height: 496px;
 
     background-position: center top 255px;
   }
@@ -37,6 +37,10 @@
 
 .header--main .header__menu-wrapper {
   margin: 0 0 23px;
+}
+
+.header--active .header__menu-wrapper {
+  margin: 0 0 27px;
 }
 
 .header__navigation-wrapper {
@@ -199,7 +203,7 @@
 
     &--active,
     &--nojs {
-      min-height: 700px;
+      min-height: 695px;
 
       background-position: center top 255px;
     }
@@ -217,6 +221,10 @@
     padding: 0;
 
     background-image: none;
+  }
+
+  .header--active .header__menu-wrapper {
+    margin: 0 0 71px;
   }
 
   .header__menu-wrapper {
