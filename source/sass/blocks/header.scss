@@ -35,12 +35,12 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.header--main .header__menu-wrapper {
-  margin: 0 0 23px;
-}
-
 .header--active .header__menu-wrapper {
   margin: 0 0 27px;
+}
+
+.header--main .header__menu-wrapper {
+  margin: 0 0 23px;
 }
 
 .header__navigation-wrapper {
@@ -212,7 +212,7 @@
       padding: 0 0 108px;
 
       background-image: url("../img/bg-iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-      background-position: right -20px bottom 0, top;
+      background-position: right -20px bottom 0, bottom;
       background-size: auto, 1200px auto;
     }
   }

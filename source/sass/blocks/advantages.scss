@@ -22,10 +22,6 @@
   b:last-child {
     margin: 0;
   }
-
-  br {
-    display: none;
-  }
 }
 
 .advantages__list-wrapper {
@@ -107,8 +103,9 @@
       margin: 0;
     }
 
-    br {
-      display: block;
+    b:last-child {
+      margin: 0 auto;
+      max-width: 370px;
     }
   }
 
@@ -173,6 +170,10 @@
 
     font-size: 50px;
     line-height: 60px;
+
+    b:last-child {
+      max-width: 450px;
+    }
   }
 
   .advantages__list-wrapper {
