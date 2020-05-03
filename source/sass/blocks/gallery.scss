@@ -23,7 +23,7 @@
 }
 
 .gallery__img-wrapper {
-  margin: 0;
+  display: block;
 
   line-height: 0;
 }
@@ -45,6 +45,13 @@
   .gallery__item {
     margin: 0 0 20px 20px;
   }
+
+  .gallery__img-wrapper {
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -55,5 +62,11 @@
 
   .gallery__item {
     margin: 0 0 55px 20px;
+  }
+
+  .gallery__img-wrapper {
+    img {
+      height: 400px;
+    }
   }
 }

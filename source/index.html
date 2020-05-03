@@ -8,7 +8,7 @@
   <script>
     document.createElement('picture');
   </script>
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/main.min.js" async></script>
 </head>
 <body>
   <div style="display:none">
@@ -62,20 +62,20 @@
     <section class="header__app app">
       <h2 class="visually-hidden">Скачать приложение Pink</h2>
       <div class="app__wrapper">
-        <button class="app__download-button button">Скачать приложение</button>
+        <a class="app__download-button button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
         <ul class="app__application-list">
           <li class="app__application-item app__application-item--ios">
-            <a href="#">
+            <a href="https://www.apple.com/ru/ios/app-store/">
               <span class="visually-hidden">Скачать для IOS</span>
             </a>
           </li>
           <li class="app__application-item app__application-item--android">
-            <a href="#">
+            <a href="https://play.google.com/store/apps">
               <span class="visually-hidden">Скачать для Android</span>
             </a>
           </li>
           <li class="app__application-item app__application-item--wp">
-            <a href="#">
+            <a href="https://www.microsoft.com/ru-tj/store/b/home">
               <span class="visually-hidden">Скачать для Windows Phone</span>
             </a>
           </li>
@@ -90,7 +90,7 @@
       <h2 class="visually-hidden">Преимущства приложения Pink</h2>
       <p class="advantages__intro-wrapper">
         <b>Устали от серости мегаполиса?</b>
-        <b>Нам есть, что вам<br> предложить!</b>
+        <b>Нам есть, что вам предложить!</b>
       </p>
       <div class="advantages__list-wrapper">
         <ul class="advantages__list">
@@ -101,17 +101,17 @@
               <source srcset="img/photo-iphone-screen-1-desktop@1x.webp 1x, img/photo-iphone-screen-1-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
               <source srcset="img/photo-iphone-screen-1-tablet@1x.webp 1x, img/photo-iphone-screen-1-tablet@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-iphone-screen-1-desktop@1x.png 1x, img/photo-iphone-screen-1-desktop@2x.png 2x" media="(min-width: 960px)">
-              <img class="advantages__item-img" src="img/photo-iphone-screen-1-tablet@1x.png" srcset="img/photo-iphone-screen-1-tablet@2x.png 2x" alt="Скриншон приложения Pink">
+              <img class="advantages__item-img" src="img/photo-iphone-screen-1-tablet@1x.png" srcset="img/photo-iphone-screen-1-tablet@2x.png 2x" width="268" height="481" alt="Скриншон приложения Pink">
             </picture>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__item-title">Меняет мир вокруг</h3>
-            <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
+            <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br> усилить эффект</p>
             <picture>
               <source srcset="img/photo-iphone-screen-2-desktop@1x.webp 1x, img/photo-iphone-screen-2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
               <source srcset="img/photo-iphone-screen-2-tablet@1x.webp 1x, img/photo-iphone-screen-2-tablet@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-iphone-screen-2-desktop@1x.png 1x, img/photo-iphone-screen-2-desktop@2x.png 2x" media="(min-width: 960px)">
-              <img class="advantages__item-img" src="img/photo-iphone-screen-2-tablet@1x.png" srcset="img/photo-iphone-screen-2-tablet@2x.png 2x" alt="Скриншон приложения Pink">
+              <img class="advantages__item-img" src="img/photo-iphone-screen-2-tablet@1x.png" srcset="img/photo-iphone-screen-2-tablet@2x.png 2x" width="268" height="481" alt="Скриншон приложения Pink">
             </picture>
           </li>
           <li class="advantages__item advantages__item--active">
@@ -120,10 +120,10 @@
             <picture>
               <source srcset="img/photo-iphone-screen-3-desktop@1x.webp 1x, img/photo-iphone-screen-3-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
               <source srcset="img/photo-iphone-screen-3-tablet@1x.webp 1x, img/photo-iphone-screen-3-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
-              <source srcset="img/photo-iphone-screen-mobile@2x.webp 1x, img/photo-iphone-screen-mobile@2x.webp 2x" type="image/webp">
+              <source srcset="img/photo-iphone-screen-mobile@1x.webp 1x, img/photo-iphone-screen-mobile@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-iphone-screen-3-desktop@1x.png 1x, img/photo-iphone-screen-3-desktop@2x.png 2x" media="(min-width: 960px)">
               <source srcset="img/photo-iphone-screen-3-tablet@1x.png 1x, img/photo-iphone-screen-3-tablet@2x.png 2x" media="(min-width: 660px)">
-              <img class="advantages__item-img" src="img/photo-iphone-screen-mobile@1x.png" srcset="img/photo-iphone-screen-mobile@2x.png 2x" alt="Скриншон приложения Pink">
+              <img class="advantages__item-img" src="img/photo-iphone-screen-mobile@1x.png" srcset="img/photo-iphone-screen-mobile@2x.png 2x" width="157" height="278" alt="Скриншон приложения Pink">
             </picture>
           </li>
         </ul>
@@ -264,18 +264,19 @@
           <svg class="contacts__map-triangle" width="595.28px" fill="#ffffff" viewBox="0 0 595.28 61.905">
             <use xlink:href="#icon-triangle-white"></use>
           </svg>
+          <iframe class="contacts__iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3739919198904!2d30.319336658352015!3d59.93632389546881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzEwLjgiTiAzMMKwMTknMTMuNiJF!5e0!3m2!1sru!2sua!4v1588343424877!5m2!1sru!2sua" width="320" height="195"></iframe>
           <picture>
             <source srcset="img/photo-map-desktop@1x.webp 1x, img/photo-map-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
             <source srcset="img/photo-map-tablet@1x.webp 1x, img/photo-map-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
             <source srcset="img/photo-map-desktop@1x.jpg 1x, img/photo-map-desktop@2x.jpg 2x" media="(min-width: 960px)">
             <source srcset="img/photo-map-tablet@1x.jpg 1x, img/photo-map-tablet@2x.jpg 2x" media="(min-width: 660px)">
-            <img src="img/photo-map-mobile@1x.jpg" srcset="img/photo-map-mobile@2x.jpg 2x" alt="ул. Большая Конюшенная, 19/8">
+            <img src="img/photo-map-mobile@1x.jpg" srcset="img/photo-map-mobile@2x.jpg 2x" width="320" height="192" alt="ул. Большая Конюшенная, 19/8">
           </picture>
         </p>
       </address>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer footer--main">
     <a class="footer__logo">
       <svg class="footer__logo-mobile" width="148" height="40" aria-hidden="true">
         <use xlink:href="#icon-logo-pink-blue-mobile"></use>
@@ -320,6 +321,5 @@
       </svg>
     </a>
   </footer>
-  <script src="js/main.js"></script>
 </body>
 </html>

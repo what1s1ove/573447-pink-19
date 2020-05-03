@@ -8,7 +8,7 @@
   <script>
     document.createElement('picture');
   </script>
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/main.min.js" async></script>
 </head>
 <body>
   <div style="display:none">
@@ -66,17 +66,17 @@
       <h2 class="visually-hidden">Фотография дня</h2>
       <div class="panorama__wrapper">
         <p class="panorama__intro">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
-        <p class="panorama__photo-wrapper">
+        <a class="panorama__photo-wrapper" href="#">
           <picture>
             <source srcset="img/photo-panorama-desktop@1x.webp 1x, img/photo-panorama-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
             <source srcset="img/photo-panorama-tablet@1x.webp 1x, img/photo-panorama-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
             <source srcset="img/photo-panorama-mobile@1x.webp 1x, img/photo-panorama-mobile@2x.webp 2x" type="image/webp">
             <source srcset="img/photo-panorama-desktop@1x.jpg 1x, img/photo-panorama-desktop@2x.jpg 2x" media="(min-width: 960px)">
             <source srcset="img/photo-panorama-tablet@1x.jpg 1x, img/photo-panorama-tablet@2x.jpg 2x" media="(min-width: 660px)">
-            <img src="img/photo-panorama-mobile@1x.jpg" srcset="img/photo-panorama-mobile@2x.jpg 2x" alt="Фото из приложения Pink">
+            <img src="img/photo-panorama-mobile@1x.jpg" srcset="img/photo-panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фото из приложения Pink">
           </picture>
           <span class="panorama__photo-topday">Панорама дня</span>
-        </p>
+        </a>
         <blockquote class="panorama__comment comment">
           <p class="comment__author-info">
             <cite class="comment__author-name">Анна</cite>
@@ -96,16 +96,16 @@
       <h2 class="visually-hidden">Галерея</h2>
       <ul class="gallery__list">
         <li class="gallery__item">
-          <p class="gallery__img-wrapper">
+          <a class="gallery__img-wrapper" href="#">
             <picture>
               <source srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
               <source srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
               <source srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <source srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x" media="(min-width: 660px)">
-              <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото из приложения Pink">
+              <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
             </picture>
-          </p>
+          </a>
           <blockquote class="gallery__comment comment">
             <p class="comment__author-info">
               <cite class="comment__author-name">Левон</cite>
@@ -121,16 +121,16 @@
           </blockquote>
         </li>
         <li class="gallery__item">
-          <p class="gallery__img-wrapper">
+          <a class="gallery__img-wrapper" href="#">
             <picture>
               <source srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
               <source srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
               <source srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x" media="(min-width: 960px)" >
               <source srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x" media="(min-width: 660px)">
-              <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото из приложения Pink">
+              <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
             </picture>
-          </p>
+          </a>
           <blockquote class="gallery__comment comment">
             <p class="comment__author-info">
               <cite class="comment__author-name">Антон</cite>
@@ -146,16 +146,16 @@
           </blockquote>
         </li>
         <li class="gallery__item">
-          <p class="gallery__img-wrapper">
+          <a class="gallery__img-wrapper" href="#">
             <picture>
               <source srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
               <source srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
               <source srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <source srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x" media="(min-width: 660px)">
-              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото из приложения Pink">
+              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
             </picture>
-          </p>
+          </a>
           <blockquote class="gallery__comment comment">
             <p class="comment__author-info">
               <cite class="comment__author-name">Борис</cite>
@@ -171,16 +171,16 @@
           </blockquote>
         </li>
         <li class="gallery__item">
-          <p class="gallery__img-wrapper">
+          <a class="gallery__img-wrapper" href="#">
             <picture>
               <source srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
               <source srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
               <source srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <source srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x" media="(min-width: 660px)">
-              <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото из приложения Pink">
+              <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
             </picture>
-          </p>
+          </a>
           <blockquote class="gallery__comment comment">
             <p class="comment__author-info">
               <cite class="comment__author-name">Сергей</cite>
@@ -196,16 +196,16 @@
           </blockquote>
         </li>
         <li class="gallery__item">
-          <p class="gallery__img-wrapper">
+          <a class="gallery__img-wrapper" href="#">
             <picture>
               <source srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
               <source srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
               <source srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <source srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x" media="(min-width: 660px)">
-              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото из приложения Pink">
+              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
             </picture>
-          </p>
+          </a>
           <blockquote class="gallery__comment comment">
             <p class="comment__author-info">
               <cite class="comment__author-name">Максим</cite>
@@ -221,16 +221,16 @@
           </blockquote>
         </li>
         <li class="gallery__item">
-          <p class="gallery__img-wrapper">
+          <a class="gallery__img-wrapper" href="#">
             <picture>
               <source srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
               <source srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
               <source srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <source srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x" media="(min-width: 660px)">
-              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото из приложения Pink">
+              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
             </picture>
-          </p>
+          </a>
           <blockquote class="gallery__comment comment">
             <p class="comment__author-info">
               <cite class="comment__author-name">Надежда</cite>
@@ -259,7 +259,7 @@
               <source srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x" type="image/webp">
               <source srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <source srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x" media="(min-width: 660px)">
-              <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Пример загрузки фотографии для приложения Pink">
+              <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Пример загрузки фотографии для приложения Pink">
             </picture>
             <input class="visually-hidden" type="file" name="new-post-picture">
             <span class="visually-hidden">Загрузка фотографии</span>
@@ -366,6 +366,5 @@
       </svg>
     </a>
   </footer>
-  <script src="js/main.js"></script>
 </body>
 </html>

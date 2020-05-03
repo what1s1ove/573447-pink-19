@@ -29,8 +29,10 @@
 
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
 
   margin: 0 0 22px;
+  padding: 0 15px;
 }
 
 .app__application-item {

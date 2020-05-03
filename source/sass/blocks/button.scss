@@ -1,12 +1,16 @@
 .button {
+  display: block;
+
   min-width: 280px;
   padding: 12px 15px;
 
   font: inherit;
   font-size: 18px;
   line-height: normal;
+  text-align: center;
   color: #ffffff;
   font-weight: 700;
+  text-decoration: none;
 
   background-color: transparent;
 
