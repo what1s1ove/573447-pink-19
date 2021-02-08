@@ -2,143 +2,268 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink: Взгляните на жизнь иначе!</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement('picture');
+  </script>
+  <script src="js/main.min.js" async></script>
 </head>
 <body>
-  <header class="header">
-    <div class="header__navigation-wrapper">
-      <a class="header__logo" href="index.html">
-        <img src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип Pink">
-      </a>
-      <nav class="header__navigation">
-        <ul class="header__navigation-list">
-          <li class="header__navigation-item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="header__navigation-item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="header__navigation-item">
-            <a>Конкурс</a>
-          </li>
-          <li class="header__navigation-item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__toggle-button">
-        <span class="visually-hidden">Переключить вид меню</span>
-      </button>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="header header--nojs">
+    <div class="header__menu-wrapper">
+      <div class="header__navigation-wrapper">
+        <a class="header__logo" href="index.html">
+          <svg class="header__logo-mobile" width="75" height="22" fill="#ffffff" aria-hidden="true">
+            <use xlink:href="#icon-logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="header__logo-tablet" width="148" height="40" fill="#ffffff" aria-hidden="true">
+            <use xlink:href="#icon-logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="header__logo-desktop" width="148" height="40" fill="#ffffff" aria-hidden="true">
+            <use xlink:href="#icon-logo-pink-white-desktop"></use>
+          </svg>
+          <span class="visually-hidden">На главную</span>
+        </a>
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li class="header__navigation-item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="header__navigation-item header__navigation-item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__toggle-button">
+          <svg class="header__toggle-button-burger" width="50" height="24" fill="#ffffff" aria-hidden="true">
+            <use xlink:href="#icon-menu-burger"></use>
+          </svg>
+          <svg class="header__toggle-button-cross" width="24" height="23" fill="#ffffff" aria-hidden="true">
+            <use xlink:href="#icon-menu-cross"></use>
+          </svg>
+          <span class="visually-hidden">Переключить вид меню</span>
+        </button>
+      </div>
     </div>
-    <b class="header__page-intro">Конкурс на самое безбашенное путешествие с Пинк</b>
+    <div class="header__wrapper">
+      <b class="header__page-intro">Конкурс на самое безбашенное путешествие с Пинк</b>
+    </div>
   </header>
   <main class="competition">
     <h1 class="visually-hidden">Конкурс от приложения Pink</h1>
-    <p class="competition__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+    <p class="competition__intro">
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      <span>Пожалуйста, заполните форму ниже:</span>
+    </p>
     <form class="competition__form" name="competition__form" method="post" action="https://echo.htmlacademy.ru">
-      <div class="competition__fullname-wrapper label-text">
-        <label class="competition__fullname-label">
-          <span>Фамилия</span>
-          <input type="text" name="competition-surname" placeholder="Укажите фамилию *">
-        </label>
-        <label class="competition__fullname-label label-text">
-          <span>Имя</span>
-          <input type="text" name="competition-name" placeholder="Введите ваше имя *">
-        </label>
-        <label class="competition__fullname-label label-text">
-          <span>Отчество</span>
-          <input type="text" name="competition-patronymic" placeholder="Ну и отчество тоже">
-        </label>
+      <div class="competition__form-wrapper">
+        <fieldset class="competition__fullname-wrapper">
+          <legend class="visually-hidden">Контактная информация</legend>
+          <label class="competition__fullname-label label-text">
+            <span>Фамилия:</span>
+            <input type="text" name="competition-surname" placeholder="Укажите фамилию *">
+          </label>
+          <label class="competition__fullname-label label-text">
+            <span>Имя:</span>
+            <input type="text" name="competition-name" placeholder="Введите ваше имя *">
+          </label>
+          <label class="competition__fullname-label label-text">
+            <span>Отчество:</span>
+            <input type="text" name="competition-patronymic" placeholder="Ну и отчество тоже">
+          </label>
+        </fieldset>
+        <div class="competition__achievements-wrapper">
+          <fieldset class="competition__achievements">
+            <legend class="competition__achievements-intro">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="competition__achievements-list">
+              <li class="competition__achievements-item competition__achievements-item--shark">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--shark" type="checkbox" name="competition-achieve--shark" checked>
+                  <label class="input-toggle__label" for="competition-achieve--shark">
+                    Сделал селфи с акулой
+                  </label>
+                </p>
+              </li>
+              <li class="competition__achievements-item competition__achievements-item--sunburn">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--sunburn" type="checkbox" name="competition-achieve--sunburn" checked>
+                  <label class="input-toggle__label" for="competition-achieve--sunburn">
+                    Обгорел на пляже
+                  </label>
+                </p>
+              </li>
+              <li class="competition__achievements-item competition__achievements-item--chuck">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--chuck" type="checkbox" name="competition-achieve--chuck">
+                  <label class="input-toggle__label" for="competition-achieve--chuck">
+                    Видел Чака Норриса
+                  </label>
+                </p>
+              </li>
+              <li class="competition__achievements-item competition__achievements-item--souvenir">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--souvenir" type="checkbox" name="competition-achieve--souvenir">
+                  <label class="input-toggle__label" for="competition-achieve--souvenir">
+                    Накупил сувениров
+                  </label>
+                </p>
+              </li>
+              <li class="competition__achievements-item competition__achievements-item--tower">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--tower" type="checkbox" name="competition-achieve--tower" checked>
+                  <label class="input-toggle__label" for="competition-achieve--tower">
+                    Удержал башню
+                  </label>
+                </p>
+              </li>
+              <li class="competition__achievements-item competition__achievements-item--hotel">
+                <p class="competition__achievements-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-achieve--hotel" type="checkbox" name="competition-achieve--hotel">
+                  <label class="input-toggle__label" for="competition-achieve--hotel">
+                    Разгромил отель
+                  </label>
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="competition__contacts-wrapper">
+          <fieldset class="competition__contacts">
+            <legend class="competition__contacts-intro">Контактная информация</legend>
+            <ul class="competition__contacts-list">
+              <li class="competition__contacts-item">
+                <label class="competition__contacts-label label-text label-text--icon-phone">
+                  <span>Номер телефона</span>
+                  <input type="tel" name="competition-number" placeholder="Номер, пожалуйста" required>
+                </label>
+              </li>
+              <li class="competition__contacts-item">
+                <label class="competition__contacts-label label-text label-text--icon-mail">
+                  <span>Адрес почты</span>
+                  <input type="email" name="competition-email" placeholder="Введите почту *" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="competition__app-wrapper">
+          <fieldset class="competition__app">
+            <legend class="competition__app-intro">С каким приложением путешествовали?</legend>
+            <ul class="competition__app-list">
+              <li class="competition__app-item">
+                <p class="competition__app-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-app--ios" type="radio" name="competition-app" value="competition-app--ios" checked>
+                  <label class="input-toggle__label" for="competition-app--ios">
+                    Pink для iOS
+                  </label>
+                </p>
+              </li>
+              <li class="competition__app-item">
+                <p class="competition__app-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-app--android" type="radio" name="competition-app" value="competition-app--android">
+                  <label class="input-toggle__label" for="competition-app--android">
+                    Pink на Android
+                  </label>
+                </p>
+              </li>
+              <li class="competition__app-item">
+                <p class="competition__app-input-wrapper input-toggle">
+                  <input class="input-toggle__input visually-hidden" id="competition-app--wp" type="radio" name="competition-app" value="competition-app--wp">
+                  <label class="input-toggle__label" for="competition-app--wp">
+                    Windows Phone
+                  </label>
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
       </div>
-      <div class="competition__achievements">
-        <p class="competition__achievements-intro">Ваши безбашенные достижения в путешествии</p>
-        <label class="competition__achievements-label label-toggle">
-          <input type="checkbox" name="competition-achieve--shark" checked>
-          Сделал селфи с акулой
-        </label>
-        <label class="competition__achievements-label label-toggle">
-          <input type="checkbox" name="competition-achieve--sunburn" checked>
-          Обгорел на пляже
-        </label>
-        <label class="competition__achievements-label label-toggle">
-          <input type="checkbox" name="competition-achieve--chuck">
-          Видел Чака Норриса
-        </label>
-        <label class="competition__achievements-label label-toggle">
-          <input type="checkbox" name="competition-achieve--souvenir">
-          Накупил сувениров
-        </label>
-        <label class="competition__achievements-label label-toggle">
-          <input type="checkbox" name="competition-achieve--tower">
-          Удержал башню
-        </label>
-        <label class="competition__achievements-label label-toggle">
-          <input type="checkbox" name="competition-achieve--hotel">
-          Разгромил отель
-        </label>
+      <div class="competition__comment-wrapper">
+        <fieldset class="competition__comment">
+          <legend class="competition__comment-intro">Опишите свои эмоции</legend>
+          <label class="competition__comment-label">
+            <span class="visually-hidden">Коментарий</span>
+            <textarea name="competition-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </label>
+        </fieldset>
       </div>
-      <div class="competition__contacts">
-        <label class="competition__contacts-label label-text">
-          <span>Номер телефона</span>
-          <input type="text" name="competition-number" placeholder="Номер, пожалуйста">
-        </label>
-        <label class="competition__contacts-label label-text">
-          <span>Адрес почты</span>
-          <input type="text" name="competition-email" placeholder="Введите почту *">
-        </label>
-      </div>
-      <div class="competition__app">
-        <p class="competition__app-intro">С каким приложением путешествовали?</p>
-        <label class="competition__app-label label-toggle">
-          <input type="radio" name="competition-app" value="competition-app--ios">
-          <span>Pink для iOS</span>
-        </label>
-        <label class="competition__app-label label-toggle">
-          <input type="radio" name="competition-app" value="competition-app--android">
-          <span>Pink на Android</span>
-        </label>
-        <label class="competition__app-label label-toggle">
-          <input type="radio" name="competition-app" value="competition-app--wp">
-          <span>Windows Phone</span>
-        </label>
-      </div>
-      <div class="competition__comment">
-        <p class="competition__comment-intro">Опишите свои эмоции</p>
-        <label class="competition__comment-label">
-          <span class="visually-hidden">Оставьте коментарий</span>
-          <textarea name="competition-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </label>
-      </div>
-      <button class="competition__form-button" type="submit">Отправить форму</button>
-      <p class="competition__form-required">
-        <abbr title="Этим символом('звёздочка'), выделены обязательные поля">*</abbr> — обязательные поля
-      </p>
+      <footer class="competition__form-footer">
+        <button class="competition__form-button button-flat" type="submit">Отправить форму</button>
+        <p class="competition__form-required">
+          <abbr title="Этим символом('звёздочка'), выделены обязательные поля">*</abbr> — обязательные <span class="competition__form-required-desktop">для заполнения</span> поля
+        </p>
+      </footer>
     </form>
   </main>
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <img src="https://via.placeholder.com/146x40" width="146" height="40" alt="Логотип Pink">
+      <svg class="footer__logo-mobile" width="148" height="40" aria-hidden="true">
+        <use xlink:href="#icon-logo-pink-blue-mobile"></use>
+      </svg>
+      <svg class="footer__logo-desktop" width="148" height="40" aria-hidden="true">
+        <use xlink:href="#icon-logo-pink-blue-desktop"></use>
+      </svg>
+      <span class="visually-hidden">На главную</span>
     </a>
     <ul class="footer__social-list">
       <li class="footer__social-item">
         <a href="#">
+          <svg  width="17.5px" height="14.663px" fill="#d22856" aria-hidden="true">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
           <span class="visually-hidden">На нашу страницу в Твиттере</span>
         </a>
       </li>
       <li class="footer__social-item">
         <a href="#">
+          <svg width="8.673px" height="18.944px" fill="#d22856" aria-hidden="true">
+            <use xlink:href="#icon-facebook"></use>
+          </svg>
           <span class="visually-hidden">На нашу страницу в Фэйсбуке</span>
         </a>
       </li>
       <li class="footer__social-item">
         <a href="#">
-          <span class="visually-hidden">На нашу страницу в Твиттере</span>
+          <svg width="14.64px" height="13.96px" fill="#d22856" aria-hidden="true">
+            <use xlink:href="#icon-youtube"></use>
+          </svg>
+          <span class="visually-hidden">На нашу страницу в Ютубе</span>
         </a>
       </li>
     </ul>
     <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <small>Разработано</small>
+      <small>
+        Разработано
+      </small>
+      <svg width="27" height="34" fill="#d22856" aria-hidden="true">
+        <use xlink:href="#icon-logo-htmlacademy"></use>
+      </svg>
     </a>
   </footer>
+  <section class="popup-notification popup-notification--warning">
+    <h2 class="popup-notification__title">Что-то пошло не так!</h2>
+    <p class="popup-notification__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <p class="popup-notification__button-wrapper">
+      <button class="popup-notification__button button-flat">Ок</button>
+    </p>
+  </section>
+  <section class="popup-notification popup-notification--success">
+    <h2 class="popup-notification__title">Ваша заявка отправлена</h2>
+    <p class="popup-notification__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    <p class="popup-notification__button-wrapper">
+      <button class="popup-notification__button button-flat">Закрыть окно</button>
+    </p>
+  </section>
 </body>
 </html>

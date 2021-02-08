@@ -2,166 +2,246 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink: Взгляните на жизнь иначе!</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement('picture');
+  </script>
+  <script src="js/main.min.js" async></script>
 </head>
 <body>
-  <header class="header">
-    <div class="header__navigation-wrapper">
-      <a class="header__logo" href="index.html">
-        <img src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип Pink">
-      </a>
-      <nav class="header__navigation">
-        <ul class="header__navigation-list">
-          <li class="header__navigation-item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="header__navigation-item">
-            <a>Фотографии</a>
-          </li>
-          <li class="header__navigation-item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="header__navigation-item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__toggle-button">
-        <span class="visually-hidden">Переключить вид меню</span>
-      </button>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="header header--nojs">
+    <div class="header__menu-wrapper">
+      <div class="header__navigation-wrapper">
+        <a class="header__logo" href="index.html">
+          <svg class="header__logo-mobile" width="75" height="22" fill="#ffffff" aria-hidden="true">
+            <use xlink:href="#icon-logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="header__logo-tablet" width="148" height="40" fill="#ffffff" aria-hidden="true">
+            <use xlink:href="#icon-logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="header__logo-desktop" width="148" height="40" fill="#ffffff" aria-hidden="true">
+            <use xlink:href="#icon-logo-pink-white-desktop"></use>
+          </svg>
+          <span class="visually-hidden">На главную</span>
+        </a>
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li class="header__navigation-item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="header__navigation-item header__navigation-item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__toggle-button">
+          <svg class="header__toggle-button-burger" width="50" height="24" fill="#ffffff" aria-hidden="true">
+            <use xlink:href="#icon-menu-burger"></use>
+          </svg>
+          <svg class="header__toggle-button-cross" width="24" height="23" fill="#ffffff" aria-hidden="true">
+            <use xlink:href="#icon-menu-cross"></use>
+          </svg>
+          <span class="visually-hidden">Переключить вид меню</span>
+        </button>
+      </div>
     </div>
-    <b class="header__page-intro">Фотографии пользователей</b>
+    <div class="header__wrapper">
+      <b class="header__page-intro">Фотографии<br> пользователей</b>
+    </div>
   </header>
   <main>
     <h1 class="visually-hidden">Фотографии пользователей приложения Pink</h1>
+    <section class="panorama">
+      <h2 class="visually-hidden">Фотография дня</h2>
+      <div class="panorama__wrapper">
+        <p class="panorama__intro">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
+        <a class="panorama__photo-wrapper" href="#">
+          <picture>
+            <source srcset="img/photo-panorama-desktop@1x.webp 1x, img/photo-panorama-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
+            <source srcset="img/photo-panorama-tablet@1x.webp 1x, img/photo-panorama-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
+            <source srcset="img/photo-panorama-mobile@1x.webp 1x, img/photo-panorama-mobile@2x.webp 2x" type="image/webp">
+            <source srcset="img/photo-panorama-desktop@1x.jpg 1x, img/photo-panorama-desktop@2x.jpg 2x" media="(min-width: 960px)">
+            <source srcset="img/photo-panorama-tablet@1x.jpg 1x, img/photo-panorama-tablet@2x.jpg 2x" media="(min-width: 660px)">
+            <img src="img/photo-panorama-mobile@1x.jpg" srcset="img/photo-panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фото из приложения Pink">
+          </picture>
+          <span class="panorama__photo-topday">Панорама дня</span>
+        </a>
+        <blockquote class="panorama__comment comment">
+          <p class="comment__author-info">
+            <cite class="comment__author-name">Анна</cite>
+            <time class="comment__author-date" datetime="2020-03-29">(5 минут назад)</time>
+          </p>
+          <p class="comment__author-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="comment__like-wrapper">
+            <button class="comment__like-button" type="button">
+              <span class="visually-hidden">Мне нравится</span>
+            </button>
+            <span class="comment__like-output">Нравится: <output>215</output></span>
+          </p>
+        </blockquote>
+      </div>
+    </section>
     <section class="gallery">
       <h2 class="visually-hidden">Галерея</h2>
-      <p class="gallery__intro">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
       <ul class="gallery__list">
-        <li class="gallery__item gallery__item--topday">
-          <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/320x137" width="320" height="137" alt="Фото из приложения Pink">
-            <span class="gallery__img-topday">Панорама дня</span>
-          </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Анна</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(5 минут назад)</time>
+        <li class="gallery__item">
+          <a class="gallery__img-wrapper" href="#">
+            <picture>
+              <source srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
+              <source srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
+              <source srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x" type="image/webp">
+              <source srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x" media="(min-width: 960px)">
+              <source srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
+            </picture>
+          </a>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Левон</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(5 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>215</output></span>
+              <span class="comment__like-output">Нравится: <output>356</output></span>
             </p>
           </blockquote>
         </li>
-        <li class="gallery__item gallery__item--topday">
-          <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
-          </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Левон</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(5 часов назад)</time>
+        <li class="gallery__item">
+          <a class="gallery__img-wrapper" href="#">
+            <picture>
+              <source srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
+              <source srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
+              <source srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x" type="image/webp">
+              <source srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x" media="(min-width: 960px)" >
+              <source srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
+            </picture>
+          </a>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Антон</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(12 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Соседи будут рады!</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>356</output></span>
+              <span class="comment__like-output">Нравится: <output>666</output></span>
             </p>
           </blockquote>
         </li>
-        <li class="gallery__item gallery__item--topday">
-          <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
-          </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Антон</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(12 часов назад)</time>
+        <li class="gallery__item">
+          <a class="gallery__img-wrapper" href="#">
+            <picture>
+              <source srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
+              <source srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
+              <source srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x" type="image/webp">
+              <source srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x" media="(min-width: 960px)">
+              <source srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
+            </picture>
+          </a>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Борис</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(20 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Соседи будут рады!</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>666</output></span>
+              <span class="comment__like-output">Нравится: <output>215</output></span>
             </p>
           </blockquote>
         </li>
-        <li class="gallery__item gallery__item--topday">
-          <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
-          </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Борис</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(20 часов назад)</time>
+        <li class="gallery__item">
+          <a class="gallery__img-wrapper" href="#">
+            <picture>
+              <source srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
+              <source srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
+              <source srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x" type="image/webp">
+              <source srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x" media="(min-width: 960px)">
+              <source srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
+            </picture>
+          </a>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Сергей</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(25 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Самая кубанская в мире!</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>215</output></span>
+              <span class="comment__like-output">Нравится: <output>4</output></span>
             </p>
           </blockquote>
         </li>
-        <li class="gallery__item gallery__item--topday">
-          <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
-          </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Сергей</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(25 часов назад)</time>
+        <li class="gallery__item">
+          <a class="gallery__img-wrapper" href="#">
+            <picture>
+              <source srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
+              <source srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
+              <source srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x" type="image/webp">
+              <source srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x" media="(min-width: 960px)">
+              <source srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
+            </picture>
+          </a>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Максим</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(40 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Самая кубанская в мире!</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Где снег-то?</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>215</output></span>
+              <span class="comment__like-output">Нравится: <output>150</output></span>
             </p>
           </blockquote>
         </li>
-        <li class="gallery__item gallery__item--topday">
-          <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
-          </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Максим</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(40 часов назад)</time>
+        <li class="gallery__item">
+          <a class="gallery__img-wrapper" href="#">
+            <picture>
+              <source srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
+              <source srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
+              <source srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x" type="image/webp">
+              <source srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x" media="(min-width: 960px)">
+              <source srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Фото из приложения Pink">
+            </picture>
+          </a>
+          <blockquote class="gallery__comment comment">
+            <p class="comment__author-info">
+              <cite class="comment__author-name">Надежда</cite>
+              <time class="comment__author-date" datetime="2020-03-29">(45 часов назад)</time>
             </p>
-            <p class="gallery__author-comment">Где снег-то?</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
+            <p class="comment__author-comment">Всем GM и взаимные лайки!</p>
+            <p class="comment__like-wrapper">
+              <button class="comment__like-button" type="button">
                 <span class="visually-hidden">Мне нравится</span>
               </button>
-              <span class="gallery__like-output">Нравится: <output>215</output></span>
-            </p>
-          </blockquote>
-        </li>
-        <li class="gallery__item gallery__item--topday">
-          <p class="gallery__img-wrapper">
-            <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото из приложения Pink">
-          </p>
-          <blockquote class="gallery__comment">
-            <p class="gallery__author-info">
-              <cite class="gallery__author-name">Надежда</cite>
-              <time class="gallery__author-date" datetime="2020-03-29">(45 часов назад)</time>
-            </p>
-            <p class="gallery__author-comment">Всем GM и взаимные лайки!</p>
-            <p class="gallery__like-wrapper">
-              <button class="gallery__like-button" type="button">
-                <span class="visually-hidden">Мне нравится</span>
-              </button>
-              <span class="gallery__like-output">Нравится: <output>215</output></span>
+              <span class="comment__like-output">Нравится: <output>2560</output></span>
             </p>
           </blockquote>
         </li>
@@ -171,60 +251,119 @@
       <h2 class="visually-hidden">Загрузка своей фотографии в приложение Pink</h2>
       <p class="new-post__intro">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       <form class="new-post__form" name="new-post__form" method="post" action="https://echo.htmlacademy.ru">
-        <label class="new-post__load-input">
-          <img src="https://via.placeholder.com/280x374" width="280" height="374" alt="Пример загрузки фотографии для приложения Pink">
-          <input type="file" name="new-post-picture">
-          <span class="visually-hidden">Загрузка фотографии</span>
-        </label>
-        <ul class="new-post__contol-list">
-          <li class="new-post__contol-item">
-            <button class="new-post__contol-button">
-              <span class="visually-hidden">Обрезка фотографии</span>
-            </button>
-          </li>
-          <li class="new-post__contol-item">
-            <button class="new-post__contol-button">
-              <span class="visually-hidden">Заливка фотографии</span>
-            </button>
-          </li>
-          <li class="new-post__contol-item">
-            <button class="new-post__contol-button">
-              <span class="visually-hidden">Инверсия фотографии</span>
-            </button>
-          </li>
-        </ul>
-        <label class="new-post__filter-label">
-          <input type="range" name="new-post-filter">
-          <span class="visually-hidden">Насыщеность фильтров</span>
-        </label>
-        <button class="new-post__submit-buttn button" type="submit">Запостить</button>
-        <button class="new-post__reset-button button" type="reset">Отмена</button>
+        <div class="new-post__form-wrapper">
+          <label class="new-post__load-input">
+            <picture>
+              <source srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x" type="image/webp" media="(min-width: 960px)">
+              <source srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x" type="image/webp" media="(min-width: 660px)">
+              <source srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x" type="image/webp">
+              <source srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x" media="(min-width: 960px)">
+              <source srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x" media="(min-width: 660px)">
+              <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Пример загрузки фотографии для приложения Pink">
+            </picture>
+            <input class="visually-hidden" type="file" name="new-post-picture">
+            <span class="visually-hidden">Загрузка фотографии</span>
+          </label>
+          <div class="new-post__form-actions">
+            <ul class="new-post__contol-list">
+              <li class="new-post__contol-item new-post__contol-item--crop new-post__contol-item--active">
+                <button class="new-post__contol-button" type="button">
+                  <svg width="48px" height="48px" fill="#283645" aria-hidden="true">
+                    <use xlink:href="#icon-editor-crop"></use>
+                  </svg>
+                  <span class="visually-hidden">Обрезка фотографии</span>
+                </button>
+                <div class="new-post__filter-wrapper">
+                  <div class="new-post__filter-track">
+                    <span class="new-post__filter-trumb" tabindex="0">
+                      <span class="visually-hidden">Насыщеность фильтра</span>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="new-post__contol-item new-post__contol-item--fill">
+                <button class="new-post__contol-button" type="button">
+                  <svg width="48px" height="48px" fill="#283645" aria-hidden="true">
+                    <use xlink:href="#icon-editor-fill"></use>
+                  </svg>
+                  <span class="visually-hidden">Заливка фотографии</span>
+                </button>
+                <div class="new-post__filter-wrapper">
+                  <div class="new-post__filter-track">
+                    <span class="new-post__filter-trumb" tabindex="0">
+                      <span class="visually-hidden">Насыщеность фильтра</span>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="new-post__contol-item new-post__contol-item--contrast">
+                <button class="new-post__contol-button" type="button">
+                  <svg width="31.92px" height="31.92px" fill="#283645" aria-hidden="true">
+                    <use xlink:href="#icon-editor-contrast"></use>
+                  </svg>
+                  <span class="visually-hidden">Инверсия фотографии</span>
+                </button>
+                <div class="new-post__filter-wrapper">
+                  <div class="new-post__filter-track">
+                    <span class="new-post__filter-trumb" tabindex="0">
+                      <span class="visually-hidden">Насыщеность фильтра</span>
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <p class="new-post__buttons-wrapper">
+              <button class="new-post__submit-button button button--pink" type="submit">Запостить</button>
+              <button class="new-post__reset-button button button--gray" type="reset">Отмена</button>
+            </p>
+          </div>
+        </div>
       </form>
     </section>
   </main>
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <img src="https://via.placeholder.com/146x40" width="146" height="40" alt="Логотип Pink">
+      <svg class="footer__logo-mobile" width="148" height="40" aria-hidden="true">
+        <use xlink:href="#icon-logo-pink-blue-mobile"></use>
+      </svg>
+      <svg class="footer__logo-desktop" width="148" height="40" aria-hidden="true">
+        <use xlink:href="#icon-logo-pink-blue-desktop"></use>
+      </svg>
+      <span class="visually-hidden">На главную</span>
     </a>
     <ul class="footer__social-list">
       <li class="footer__social-item">
         <a href="#">
+          <svg  width="17.5px" height="14.663px" fill="#d22856" aria-hidden="true">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
           <span class="visually-hidden">На нашу страницу в Твиттере</span>
         </a>
       </li>
       <li class="footer__social-item">
         <a href="#">
+          <svg width="8.673px" height="18.944px" fill="#d22856" aria-hidden="true">
+            <use xlink:href="#icon-facebook"></use>
+          </svg>
           <span class="visually-hidden">На нашу страницу в Фэйсбуке</span>
         </a>
       </li>
       <li class="footer__social-item">
         <a href="#">
-          <span class="visually-hidden">На нашу страницу в Твиттере</span>
+          <svg width="14.64px" height="13.96px" fill="#d22856" aria-hidden="true">
+            <use xlink:href="#icon-youtube"></use>
+          </svg>
+          <span class="visually-hidden">На нашу страницу в Ютубе</span>
         </a>
       </li>
     </ul>
     <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <small>Разработано</small>
+      <small>
+        Разработано
+      </small>
+      <svg width="27" height="34" fill="#d22856" aria-hidden="true">
+        <use xlink:href="#icon-logo-htmlacademy"></use>
+      </svg>
     </a>
   </footer>
 </body>

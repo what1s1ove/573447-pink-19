@@ -1,0 +1,63 @@
+.input-toggle {
+  margin: 0;
+}
+
+.input-toggle__label {
+  display: flex;
+  align-items: center;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    background: #ffffff no-repeat 50% 50%;
+
+    border: solid 2px #e5e5e5;
+  }
+}
+
+.input-toggle__input {
+  &:hover + .input-toggle__label::before,
+  &:focus + .input-toggle__label::before {
+    border-color: #283645;
+  }
+
+  &:active + .input-toggle__label::before {
+    border-color: #d22856;
+  }
+}
+
+.input-toggle__input[type="checkbox"] + .input-toggle__label::before {
+  width: 39px;
+  height: 39px;
+  margin: 0 30px 0 0;
+}
+
+.input-toggle__input[type="checkbox"]:checked + .input-toggle__label::before {
+  background-image: url("../img/yes--pink.svg");
+}
+
+.input-toggle__input[type="radio"] + .input-toggle__label::before {
+  width: 37px;
+  height: 37px;
+  margin: 0 32px 0 0;
+
+  border-radius: 50%;
+}
+
+.input-toggle__input[type="radio"]:checked + .input-toggle__label::before {
+  background-image: url("../../img/map-marker.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .input-toggle__input[type="checkbox"] + .input-toggle__label::before {
+    margin: 0 20px 0 0;
+  }
+
+  .input-toggle__input[type="radio"] + .input-toggle__label::before {
+    margin: 0 20px 0 0;
+  }
+}

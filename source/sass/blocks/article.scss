@@ -1,0 +1,77 @@
+.article {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .article {
+    display: block;
+  }
+
+  .article__wrapper {
+    max-width: 627px;
+    min-height: 335px;
+    margin: 0 auto;
+    padding: 96px 10px 30px 312px;
+
+    background-image: url("../img/clock.svg");
+    background-repeat: no-repeat;
+    background-position: 0 58px;
+    background-size: 243px auto;
+  }
+
+  .article__title {
+    margin: 0 0 10px;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #000000;
+  }
+
+  .article__text {
+    margin: 0 0 8px;
+
+    line-height: 24px;
+  }
+
+  .article__link {
+    line-height: 24px;
+    color: #d22856;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .article {
+    background-color: #f2f2f2;
+  }
+
+  .article__wrapper {
+    max-width: 960px;
+    padding: 159px 75px 110px 377px;
+
+    background-position: 10px 65px;
+    background-size: 300px auto;
+  }
+
+  .article__title {
+    margin: 0 0 24px;
+
+    line-height: 30px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .article__text {
+    margin: 0 0 31px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .article__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,71 @@
+.label-text {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  span {
+    margin: 0 0 11px;
+
+    text-indent: 22px;
+    text-transform: uppercase;
+    line-height: normal;
+    color: #d22856;
+  }
+
+  input {
+    padding: 14px 20px;
+
+    font: inherit;
+    font-size: 18px;
+    line-height: 30px;
+
+    border: 2px solid #e5e5e5;
+
+    border-radius: 2px;
+  }
+
+  input:hover,
+  input:focus {
+    border-color: #283645;
+  }
+
+  input:active {
+    border-color: #d22856;
+  }
+
+  input::placeholder {
+    color: #283645;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .label-text {
+    input {
+      padding: 14px 65px 14px 20px;
+    }
+
+    &--icon-phone::after,
+    &--icon-mail::after {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+
+      content: "";
+      width: 58px;
+      height: 58px;
+
+      background: #e5e5e5 no-repeat 50% 50%;
+
+      border-radius: 2px 2px 0 0;
+    }
+
+    &--icon-phone::after {
+      background-image: url("../img/phone.svg");
+    }
+
+    &--icon-mail::after {
+      background-image: url("../img/mail.svg");
+    }
+  }
+}
